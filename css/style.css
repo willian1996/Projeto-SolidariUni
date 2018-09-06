@@ -1,0 +1,40 @@
+#menu{
+    background-color: #80d8ff;
+    height: 65px;
+    padding-top: 8px;
+    padding-bottom: 73px;
+}
+div.slider ul.slides{
+    height: 600px !important;
+}
+div.slider {
+    height: 640px !important;
+}
+
+#conteudoTexto{
+    margin: 80px 60px;
+
+}
+
+#conteudoTexto h1{
+    text-align: center;
+    font-size: 40px;
+
+}
+#conteudoTexto p{
+    font-size: 20px;
+    text-align: justify;
+    
+}
+.footer-copyright{
+    text-align: center;
+}
+.brand-logo{
+    padding: 2px 2px;
+}
+#sessaoCard{
+    margin: 80px 60px;
+}
+
+
+
