@@ -1,5 +1,5 @@
 #menu{
-    background-color:#62c8f8;
+    background: -webkit-gradient(linear, left top, right top, from(#8abbea), to(#3C96EC)) no-repeat; background: -moz-linear-gradient(left, #8abbea, #3C96EC); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#8abbea', EndColorStr='#3C96EC')
     opacity: 5.8;
     filter: alpha(opacity=50);
     height: 65px;
@@ -78,7 +78,7 @@ dropdown1{
 }
 
 header #menu .container li a:hover{
-    background-color:#3BB6F2;
+    background-color:#1d89f0;
 }
 
 .page-footer{
@@ -103,6 +103,10 @@ ul li a{
 #side-nav hr{
     float: left;
     
+}
+
+.slider .indicators .indicator-item.active{
+    background-color: #0d1771;
 }
 
 
