@@ -9,19 +9,13 @@
 .brand-logo{
     padding: 2px 2px;
 }
-
-
 .brand-logo img{
     max-width: 256px;
     width: 100%;
-
-    
-    
-    
 }
-
-
-
+    
+    
+    
 div.slider ul.slides{
     height: 600px !important;
 }
@@ -72,8 +66,7 @@ dropdown1{
 }
 
 #modal-login {
-    max-width: 400px;
-    width: 100%;
+    width: 400px;
     height: 300px;
     background-color: #FFF;
     border-radius: 2%;
