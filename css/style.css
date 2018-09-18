@@ -1,9 +1,27 @@
 #menu{
-    background-color: #80d8ff;
+    background-color:#62c8f8;
+    opacity: 5.8;
+    filter: alpha(opacity=50);
     height: 65px;
-    padding-top: 8px;
-    padding-bottom: 73px;
+    padding-top: 16px;
+    padding-bottom: 81px;
 }
+.brand-logo{
+    padding: 2px 2px;
+}
+
+
+.brand-logo img{
+    max-width: 256px;
+    width: 100%;
+
+    
+    
+    
+}
+
+
+
 div.slider ul.slides{
     height: 600px !important;
 }
@@ -19,6 +37,7 @@ div.slider {
 #conteudoTexto h1{
     text-align: center;
     font-size: 40px;
+    color:bl
 
 }
 #conteudoTexto p{
@@ -29,12 +48,66 @@ div.slider {
 .footer-copyright{
     text-align: center;
 }
-.brand-logo{
-    padding: 2px 2px;
-}
+
 #sessaoCard{
     margin: 80px 60px;
 }
+
+#modal-avatar{
+    width: 50px;
+    height: 50px;
+    float: right;
+    border-radius: 50%;
+    margin: 7.5px 5px;
+    
+    
+}
+dropdown1{
+    float: left;
+}
+
+
+.parallax-container{
+    height: 400px;
+}
+
+#modal-login {
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 2%;
+   
+}
+#loginUsuario{
+    padding: 15px;
+    
+}
+
+header #menu .container li a:hover{
+    background-color:#3BB6F2;
+}
+
+.page-footer{
+    background-color: #1889E6;
+}
+
+#sessaoCard a{
+    color:#050c4a;
+}
+
+h1{
+    color: #050c4a;
+}
+
+#paragrafo2 p{
+    text-align: center;
+}
+
+ul li a{
+    font-size: 17px;
+}
+
 
 
 
