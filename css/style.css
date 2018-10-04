@@ -218,9 +218,9 @@ ul li a{
 }
 
 .comentario .membros img{
-	width: 70px;
+	width: 145px;
 	float: left;
-	border-radius: 34px;
+	border-radius: 100px;
     text-align: center;
 }
 
@@ -244,5 +244,14 @@ ul li a{
 #conteudosobrenos .comentario .membros .imgalessandra{
     margin: 30px 20px;
 }
+
+.membros p{
+    margin-left: 180px;
+}
+
+.membros h4{
+    margin-left: 180px;
+}
+
 
 
