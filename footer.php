@@ -1,4 +1,3 @@
-
 <footer class="page-footer">    
               <div class="container">
                 <div class="row">
@@ -46,12 +45,26 @@
             $('.parallax').parallax();
             //modal trigger
             $('.modal').modal();
+            $('select').material_select();
+            
 
 
             });
+            function optionCheck(){
+                var option = document.getElementById("options").value;
+                if(option == "pessoa-fisica"){
+                    document.getElementById("hiddenFisica").style.visibility ="visible";
+                }
+                else if(option == "pessoa-juridica"){
+                    document.getElementById("hiddenJuridica").style.visibility ="visible";
+                }
+            }
             
             
         </script>
+        
+        
+
         <div class="modal" id="modal-login">
             <div id="loginUsuario" class="col s12 m6">
             <form id="login" method="post">
@@ -62,8 +75,11 @@
                 <div class="input-field col s12 ">
                     <label for="senha">Senha:</label><input type="password" required name="senha" id="login_senha"><br/>
                 </div>
-                <input type="submit" value="login" class="blue-grey darken-4 btn">
-                <a href="#" class="btn">cadastrar</a>
+                <input type="submit" value="login" class=" blue-grey darken-4 btn">
+                <a href="cadastro-frontend.php" class="btn">cadastrar</a>
                 </form>
+                
 	       </div>
         </div>
+    </body>
+</html>

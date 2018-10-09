@@ -1,6 +1,6 @@
 <?php
 
-if(true){
+if(!true){
     require_once 'menu-logado.php';
 }
 else{
