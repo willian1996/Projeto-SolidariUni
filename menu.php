@@ -28,7 +28,7 @@
                         <li><a href="index.php">Início</a></li>
                         <li><a href="#">Campanhas</a></li>
                         <li><a href="sobrenos.php">Sobre nós</a></li>
-                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="faq.php">Dúvidas</a></li>
                         <li><a href="#modal-login" class="modal-trigger">Login/Cadastro</a></li>
                         
                       </ul>
@@ -39,7 +39,7 @@
                         <hr width='80%'>
                         <li><a href="#">Sobre nós</a></li>
                         <hr width='80%'>
-                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="faq.php">Dúvidas</a></li>
                         <hr width='80%'>
                         <li><a href="#modal-login" class="modal-trigger">Login/Cadastro</a></li>
                         <hr width='80%'>

@@ -34,19 +34,19 @@ else{
                     <div class="sobreliandra">
                     <img src="img/liandra.jpg" alt="Liandra">
 						<h4>Liandra Ellen</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim lectus eget lacinia fermentum. Maecenas finibus maximus massa, dignissim mollis orci vehicula vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ornare interdum blandit. Ut non nulla augue.</p>
+						<p>Liandra Ellen de Oliveira Silva (07/07/2001). Nasceu em Caraguatatuba, litoral norte de São Paulo. Liandra sempre foi bem estudiosa e sempre estudou em escola pública. Liandra sentiu vontade de fazer um curso para complementar seus estudos, então sentiu interesse no curso de Técnico em Informática para Internet. Liandra quer ser fonoaudiologa no futuro.</p>
                     </div>
                
                     <div class="sobreluan">
                     <img src="img/luan.jpg" alt="Luan">
 						<h4>Luan de Paula</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim lectus eget lacinia fermentum. Maecenas finibus maximus massa, dignissim mollis orci vehicula vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ornare interdum blandit. Ut non nulla augue.</p>
+						<p>Luan Gustavo Oliveira de Paula (03/04/2001). Nasceu em São Sebastião, no litoral norte de São Paulo. Luan sempre estudou em escola pública e se interessou por um curso de informática no IFSP aos 16 anos. Teve a ideia de criar um site para doações durante o projeto e então a SolidariUni foi ganhando forma.</p>
                     </div>
                     
                     <div class="sobrewillian">    
                     <img src="img/willian.jpg" alt="Willian">
 						<h4>Willian Sales</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim lectus eget lacinia fermentum. Maecenas finibus maximus massa, dignissim mollis orci vehicula vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ornare interdum blandit. Ut non nulla augue.</p>
+						<p>Willian Sales Gabriel (01/01/1996). Nasceu em São Sebastião, litoral norte de São Paulo. Willian começou a trabalhar desde cedo como açougueiro. Após um tempo, conseguiu um emprego de balconista em um hotel, onde trabalha até hoje. Willian deseja ser um programador no futuro, pois gosta muito da área e do curso, que o proporcionou muitas coisas.</p>
                     </div>
                 </div>
             </div>

@@ -194,11 +194,17 @@ ul li a{
 .page-footer .footer-copyright{
     background-color: #4286c7;
 }
-#form-contato{
+@media screen and (min-width: 1200px){
     margin: 80px 60px;
-    
+}
+
+#form-contato h4{
+    margin-bottom: 60px;
+    color: #050c4a;
+    margin-left: 20px;
     
 }
+
 #form-contato-interno{
     width: 80%;
     margin-left: 0 60px !important;
@@ -214,7 +220,7 @@ ul li a{
 }
 
 #conteudosobrenos .comentario .membros p{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .comentario .membros img{
@@ -254,4 +260,20 @@ ul li a{
  margin-left: 180px;
 }
 
+#faq h1{
+    text-align: center;
+    margin-bottom: 80px;
+}
 
+.h1duvidas{
+    margin: 90px;
+}
+
+#faq .h1duvidas .duvidas ul{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.collapsible li{
+    margin-bottom: 40px;
+}

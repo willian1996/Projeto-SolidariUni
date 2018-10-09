@@ -29,7 +29,7 @@
                         <li><a href="index.php">Início</a></li>
                         <li><a href="#">Campanhas</a></li>
                         <li><a href="sobrenos.php">Sobre nós</a></li>
-                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="faq.php">Dúvidas</a></li>
                         
                         
                       </ul>

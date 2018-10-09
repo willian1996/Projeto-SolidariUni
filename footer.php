@@ -1,3 +1,4 @@
+
 <footer class="page-footer">    
               <div class="container">
                 <div class="row">
@@ -51,9 +52,6 @@
             
             
         </script>
-        
-        
-
         <div class="modal" id="modal-login">
             <div id="loginUsuario" class="col s12 m6">
             <form id="login" method="post">
@@ -64,11 +62,8 @@
                 <div class="input-field col s12 ">
                     <label for="senha">Senha:</label><input type="password" required name="senha" id="login_senha"><br/>
                 </div>
-                <input type="submit" value="login" class=" blue-grey darken-4 btn">
+                <input type="submit" value="login" class="blue-grey darken-4 btn">
                 <a href="#" class="btn">cadastrar</a>
                 </form>
-                
 	       </div>
         </div>
-    </body>
-</html>
