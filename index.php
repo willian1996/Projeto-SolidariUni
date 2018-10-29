@@ -1,4 +1,6 @@
+
 <?php
+//Meu nome é Willian Sales Gabriel 
 session_start();
 
 if(isset($_SESSION['idusuario'])){
