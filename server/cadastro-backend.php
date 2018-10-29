@@ -5,6 +5,7 @@ $sobrenome = isset($_POST['sobrenome'])?$_POST['sobrenome']:'';
 $email = isset($_POST['email'])?$_POST['email']:'';
 $senha = isset($_POST['senha'])?$_POST['senha']:'';
 $senha = sha1($senha);
+$telefone = isset($_POST['telefone'])?$_POST['telefone']:'';
 $CPF = isset($_POST['CPF'])?$_POST['CPF']:'';
 $tipo_pessoa = isset($_POST['tipo_pessoa'])?$_POST['tipo_pessoa']:'';
 $data_nascimento = isset($_POST['data_nascimento'])?$_POST['data_nascimento']:'';
@@ -15,14 +16,15 @@ $tipo_pessoa = isset($_POST['tipo_pessoa'])?$_POST['tipo_pessoa']:'';
 require_once 'conexao.php';
 
 try{
-    $stmt = $conn->prepare("INSERT usuarios (primeiro_nome, sobrenome, email, senha, CPF, data_nascimento, CNPJ, razao_social, tipo_pessoa) 
-    VALUES (:primeiro_nome, :sobrenome, :email, :senha, :CPF, :data_nascimento, :CNPJ, :razao_social, :tipo_pessoa)"
+    $stmt = $conn->prepare("INSERT usuarios (primeiro_nome, sobrenome, email, senha, telefone, CPF, data_nascimento, CNPJ, razao_social, tipo_pessoa) 
+    VALUES (:primeiro_nome, :sobrenome, :email, :senha, :telefone, :CPF, :data_nascimento, :CNPJ, :razao_social, :tipo_pessoa)"
     );
     
     $stmt->bindParam(':primeiro_nome', $primeiro_nome);
     $stmt->bindParam(':sobrenome', $sobrenome);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':senha', $senha);
+    $stmt->bindParam(':telefone', $telefone);
     $stmt->bindParam(':CPF', $CPF);
     $stmt->bindParam(':tipo_pessoa', $tipo_pessoa);
     $stmt->bindParam(':data_nascimento', $data_nascimento);

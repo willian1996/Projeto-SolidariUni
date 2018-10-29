@@ -41,7 +41,7 @@ else{
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="telefone" type="tel" required>
+                        <input id="telefone" name="telefone" type="tel" required>
                         <label for="telefone">Telefone</label>
                       </div>
                     </div>
