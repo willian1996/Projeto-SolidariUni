@@ -1,0 +1,303 @@
+@font-face {
+  font-family: 'crud-ajax';
+  src: url('../font/crud-ajax.eot?42572493');
+  src: url('../font/crud-ajax.eot?42572493#iefix') format('embedded-opentype'),
+       url('../font/crud-ajax.woff2?42572493') format('woff2'),
+       url('../font/crud-ajax.woff?42572493') format('woff'),
+       url('../font/crud-ajax.ttf?42572493') format('truetype'),
+       url('../font/crud-ajax.svg?42572493#crud-ajax') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'crud-ajax';
+    src: url('../font/crud-ajax.svg?42572493#crud-ajax') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "crud-ajax";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
+
+#menu{
+    background: -webkit-gradient(linear, left top, right top, from(#8abbea), to(#3C96EC)) no-repeat; background: -moz-linear-gradient(left, #8abbea, #3C96EC); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, Start orStr='#8abbea', EndColorStr='#3C96EC')
+    opacity: 5.8;
+    filter: alpha(opacity=50);
+    height: 65px;
+    padding-top: 16px;
+    padding-bottom: 81px;
+}
+
+.brand-logo{
+    padding: 2px 2px;
+}
+
+.brand-logo img{
+    max-width: 256px;
+    width: 100%;
+}
+        
+div.slider ul.slides{
+    height: 600px !important;
+}
+div.slider {
+    height: 640px !important;
+}
+
+#conteudoTexto{
+    margin: 80px 60px;
+
+}
+
+#conteudoTexto h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+
+}
+#conteudoTexto p{
+    font-size: 20px;
+    text-align: justify;
+    color: #222222;
+    
+}
+.footer-copyright{
+    text-align: center;
+}
+
+#sessaoCard{
+    margin: 80px 60px;
+}
+
+#modal-avatar{
+    width: 50px;
+    height: 50px;
+    float: right;
+    border-radius: 50%;
+    margin: 7.5px 5px;
+    
+    
+}
+
+.dropdown-button{
+    float: right;
+}
+
+#dropdown1{
+    margin-top: 60px;
+    padding-right: 250px;
+}
+
+.parallax-container{
+    height: 400px;
+}
+
+#modal-login {
+    max-width: 400px;
+    width: 90%;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 2%;
+}
+#loginUsuario{
+    padding: 15px;
+    
+}
+
+header #menu .container li a:hover{
+    background-color:#1d89f0;
+}
+
+.page-footer{
+    background-color: #3C96EC;
+}
+
+#sessaoCard a{
+    color:#050c4a;
+}
+
+h1{
+    color: #050c4a;
+}
+
+#paragrafo2 p{
+    text-align: center;
+}
+
+ul li a{
+    font-size: 17px;
+}
+#side-nav hr{
+    float: left;
+    
+}
+
+.slider .indicators .indicator-item.active{
+    background-color: #3C96EC;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "crud-ajax";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 12px;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+.page-footer .footer-copyright{
+    background-color: #4286c7;
+}
+@media screen and (min-width: 1200px){
+    margin: 80px 60px;
+}
+
+#form-contato h4{
+    margin-bottom: 60px;
+    color: #050c4a;
+    margin-left: 20px;
+    
+}
+
+#form-contato-interno{
+    width: 80%;
+    margin-left: 0 60px !important;
+    padding: 20px;
+}
+
+#conteudosobrenos .sobre h1{
+    font-size: 50px;
+}
+
+.sobre{
+   margin: 80px 60px;
+}
+
+#conteudosobrenos .comentario .membros p{
+    font-size: 16px;
+}
+
+.comentario .membros img{
+	width: 145px;
+	float: left;
+	border-radius: 200px;
+    text-align: center;
+}
+
+.sobrealessandra, .sobrecristina, .sobreliandra, .sobreluan, .sobrewillian{
+    margin: 90px 70px;
+}
+
+#conteudosobrenos h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+
+}
+
+#conteudosobrenos p{
+    font-size: 25px;
+    text-align: justify;
+    color: #222222; 
+}
+
+#conteudosobrenos .comentario .membros .imgalessandra{
+    margin: 30px 20px;
+}
+
+.membros p{
+ margin-left: 180px;
+}
+
+.membros h4{
+ margin-left: 180px;
+}
+
+#faq{
+    width: 80%;
+    margin: auto;
+    
+}
+
+
+#faq h1{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+
+#faq .duvidas ul{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.collapsible li{
+    margin-bottom: 40px;
+}
+.collapsible{
+    margin: auto !important;
+    width: 80%;
+}
+
+#section-campanhas{
+    margin: 80px 60px;
+    
+}
+.footer-copyright{
+    width: 100%;
+}
+
+
+
