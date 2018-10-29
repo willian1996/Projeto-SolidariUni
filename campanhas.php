@@ -11,8 +11,6 @@ else{
 
 ?>
 
-<!-- minha parte -->
-
         <section id="conteudoTexto">
             <div id="paragrafo2">
             <h1>Todas as campanhas</h1>

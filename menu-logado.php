@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -58,4 +59,5 @@
                 </div>
                 
             </nav>
+            
         </header>
