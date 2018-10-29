@@ -50,7 +50,7 @@
                         <hr width='80%'>
                         <li><a href="#">Dúvidas</a></li>
                         <hr width='80%'>
-                        <li><a href="#modal-login" class="modal-trigger">Login/Cadastro</a></li>
+                        <li><a href="server/logout.php">Sair</a></li>
                         <hr width='80%'>
                       </ul>
                         
