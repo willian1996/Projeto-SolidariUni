@@ -18,29 +18,36 @@
             <nav id="menu">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="#!" class="brand-logo"><img src="img/teste-logo.svg"></a>
+                        <a href="index.php" class="brand-logo"><img src="img/teste-logo.svg"></a>
                       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                         
                         <!--Avatar-->
-                        <a href="#"><img src="img/avatar-365-456317.png" id="modal-avatar"></a>
+                        <a href="#" data-activates='dropdown1' class="dropdown-button"><img src="img/avatar-365-456317.png" id="modal-avatar"></a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Que mais</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Meu perfil</a></li>
+                            <li><a href="server/logout.php">Sair</a></li>
+                        </ul>
+ 
 
     
                       <ul class="right hide-on-med-and-down">
                         <li><a href="index.php">Início</a></li>
-                        <li><a href="#">Campanhas</a></li>
+                        <li><a href="campanhas.php">Campanhas</a></li>
                         <li><a href="sobrenos.php">Sobre nós</a></li>
-                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="duvidas.php">Dúvidas</a></li>
                         
                         
                       </ul>
                         <div id=""></div>
                         
                       <ul class="side-nav" id="mobile-demo">
-                        <li><a href="#">Campanhas</a></li>
+                        <li><a href="campanhas.php">Campanhas</a></li>
                         <hr width='80%'>
-                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="sobrenos.php">Sobre nós</a></li>
                         <hr width='80%'>
-                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="duvidas.php">Dúvidas</a></li>
                         <hr width='80%'>
                         <li><a href="#modal-login" class="modal-trigger">Login/Cadastro</a></li>
                         <hr width='80%'>

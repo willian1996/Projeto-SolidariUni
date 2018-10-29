@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-if(!true){
+if(isset($_SESSION['idusuario'])){
     require_once 'menu-logado.php';
 }
 else{
@@ -46,7 +47,7 @@ else{
                     <div class="sobrewillian">    
                     <img src="img/willian.jpg" alt="Willian">
 						<h4>Willian Sales</h4>
-						<p>Willian Sales Gabriel (01/01/1996). Nasceu em São Sebastião, litoral norte de São Paulo. Willian começou a trabalhar desde cedo como açougueiro. Após um tempo, conseguiu um emprego de balconista em um hotel, onde trabalha até hoje. Willian deseja ser um programador no futuro, pois gosta muito da área e do curso, que o proporcionou muitas coisas.</p>
+						<p>Willian Sales Gabriel (01/01/1996). Nasceu em São Sebastião, litoral norte de São Paulo. Willian começou sua vida profissional com 16 anos no ramo hotelaria como Garçom. Aos 18 anos, subiu de cargo para recepcionista no mesmo hotel, onde trabalha até hoje. Willian deseja ser um programador no futuro, pois gosta muito da área programação de sistemas e paginas web.</p>
                     </div>
                 </div>
             </div>

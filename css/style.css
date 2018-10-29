@@ -120,10 +120,15 @@ div.slider {
     
     
 }
-dropdown1{
-    float: left;
+
+.dropdown-button{
+    float: right;
 }
 
+#dropdown1{
+    margin-top: 60px;
+    padding-right: 250px;
+}
 
 .parallax-container{
     height: 400px;
@@ -252,7 +257,6 @@ ul li a{
 }
 
 .membros p{
-
  margin-left: 180px;
 }
 
@@ -260,16 +264,21 @@ ul li a{
  margin-left: 180px;
 }
 
+#faq{
+    width: 80%;
+    margin: auto;
+    
+}
+
+
 #faq h1{
     text-align: center;
     margin-bottom: 80px;
 }
 
-.h1duvidas{
-    margin: 90px;
-}
 
-#faq .h1duvidas .duvidas ul{
+
+#faq .duvidas ul{
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -277,3 +286,18 @@ ul li a{
 .collapsible li{
     margin-bottom: 40px;
 }
+.collapsible{
+    margin: auto !important;
+    width: 80%;
+}
+
+#section-campanhas{
+    margin: 80px 60px;
+    
+}
+.footer-copyright{
+    width: 100%;
+}
+
+
+

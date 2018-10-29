@@ -4205,6 +4205,7 @@ nav ul a span.badge {
     left: 100%;
   }
 }
+}
 
 nav {
   color: #fff;
@@ -4408,7 +4409,7 @@ nav .input-field label.active i {
   position: fixed;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 700px) {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
   }
@@ -7073,7 +7074,7 @@ select:disabled {
 }
 
 .select-dropdown.dropdown-content li:hover {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: #FFF;
 }
 
 .select-dropdown.dropdown-content li.selected {

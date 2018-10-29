@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-if(!true){
+if(isset($_SESSION['idusuario'])){
     require_once 'menu-logado.php';
 }
 else{
@@ -10,7 +11,25 @@ else{
 
 ?>
  <!-------------Slider---------------->       
-        <header>
+<header>
+<?php
+    if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
+            <div id="sucessoMail">
+              <script type="text/javascript">
+              alert ("SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!");
+              </script>         
+            </div>
+    <?php } ?>
+
+    <?php
+    if (isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='true'){?>
+            <div id="erroMail">
+               <script type="text/javascript">
+             alert("Ocorreu um erro no seu envio, tente novamente!!!");
+             </script>            
+            </div>
+    <?php } ?>             
+
             <div class="slider">
                 <ul class="slides" style="height: 600px">
                   <li>
@@ -56,7 +75,7 @@ else{
             </div>
         </section>
 <!--------------FIMPARALLAX--------------------------->
-            <section id="conteudoTexto">
+        <section id="conteudoTexto">
             <div id="paragrafo2">
             <h1>Campanhas com sucesso</h1>
                 <p>Muitas campanhas já obtiveram sucesso! Participe você também e ajude aqueles que precisam. Doar faz bem.</p>

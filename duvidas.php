@@ -1,17 +1,17 @@
 <?php
+session_start();
 
-if(!true){
+if(isset($_SESSION['idusuario'])){
     require_once 'menu-logado.php';
 }
 else{
     require_once 'menu.php';
 }
 
-?>
 
+?>
 <!-- FAQ/DUVIDAS FREQUENTES!-->
 <section id="faq">
-    <div class="h1duvidas">
         <h1>Dúvidas frequentes</h1>
         <div class="duvidas">
             <ul class="collapsible" data-collapsible="accordion">
@@ -47,7 +47,7 @@ else{
               </li>
             </ul>
         </div>
-    </div>
+    
 </section>
 
 
