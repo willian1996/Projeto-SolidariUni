@@ -13,6 +13,7 @@ else{
     <div class="perfiluser">
         <div class="fotouser">
             <img src="img/willian.jpg">
+                <h3>Willian Sales</h3>
         </div>
     </div>
 </section>

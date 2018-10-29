@@ -26,7 +26,7 @@
                         <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="#!">Que mais</a></li>
                             <li class="divider"></li>
-                            <li><a href="#!">Meu perfil</a></li>
+                            <li><a href="perfiluser.php">Meu perfil</a></li>
                             <li><a href="server/logout.php">Sair</a></li>
                         </ul>
  
