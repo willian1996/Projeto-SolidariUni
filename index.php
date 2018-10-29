@@ -11,7 +11,7 @@ else{
 }
 
 
-?>
+?><!--meu nome é cris->
  <!-------------Slider---------------->       
 <header>
 <?php
