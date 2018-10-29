@@ -26,7 +26,7 @@
     
                       <ul class="right hide-on-med-and-down">
                         <li><a href="index.php">Início</a></li>
-                        <li><a href="campanhas.php">Campanhas</a></li>
+                        <li><a href="#">Campanhas</a></li>
                         <li><a href="sobrenos.php">Sobre nós</a></li>
                         <li><a href="duvidas.php">Dúvidas</a></li>
                         <li><a href="#modal-login" class="modal-trigger">Login/Cadastro</a></li>
@@ -37,7 +37,7 @@
                       <ul class="side-nav" id="mobile-demo">
                         <li><a href="index.php">Início</a></li>
                         <hr width='80%'>
-                        <li><a href="campanhas.php">Campanhas</a></li>
+                        <li><a href="#">Campanhas</a></li>
                         <hr width='80%'>
                         <li><a href="sobrenos.php">Sobre nós</a></li>
                         <hr width='80%'>

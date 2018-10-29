@@ -75,7 +75,7 @@ else{
             </div>
         </section>
 <!--------------FIMPARALLAX--------------------------->
-        <section id="conteudoTexto">
+            <section id="conteudoTexto">
             <div id="paragrafo2">
             <h1>Campanhas com sucesso</h1>
                 <p>Muitas campanhas já obtiveram sucesso! Participe você também e ajude aqueles que precisam. Doar faz bem.</p>

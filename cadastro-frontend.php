@@ -92,7 +92,7 @@ else{
                         </div>
                          <div class="row">
                           <div class=" col s12">
-                            <input id="razao-social" name="razao_social" type="text">
+                            <input id="razao-social" name="razao-social" type="text">
                             <label for="razao-social">Razão Social</label>
                           </div>
                         </div>

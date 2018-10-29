@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-if(!true){
+if(isset($_SESSION['idusuario'])){
     require_once 'menu-logado.php';
 }
 else{
