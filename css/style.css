@@ -299,5 +299,55 @@ ul li a{
     width: 100%;
 }
 
+/* Perfil usuário */
+
+#perfil{
+    width: 80%;
+    margin: auto; 
+}
+
+#perfil .perfiluser{
+    background-color: #D3D3D3;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#perfil .perfiluser .fotouser{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    margin-left: 15px;
+}
+
+#perfil .perfiluser .fotouser img{
+    width: 100%;
+    background-image:url(../img/willian.jpg);
+    border-radius: 100%;
+}
+
+#perfil .perfiluser h3{
+    font-size: 38px;
+    padding-top: 100px;
+    margin-left: 20%;
+}
+
+@media screen and (min-width 1200px){
+    #perfil .perfiluser h3{
+         margin-left: 80px;
+         margin-right: 80px;
+         margin-top: 200px;
+    }
+    #perfil .perfiluser img{
+        margin: 80px 60px;
+    }
+    
+    
+}
 
 
