@@ -44,7 +44,7 @@
                         <div id=""></div>
                         
                       <ul class="side-nav" id="mobile-demo">
-                        <li><a href="#">Campanhas</a></li>
+                        <li><a href="campanhas.php">Campanhas</a></li>
                         <hr width='80%'>
                         <li><a href="#">Sobre nós</a></li>
                         <hr width='80%'>
