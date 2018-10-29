@@ -12,11 +12,31 @@ else{
 ?>
  <!-------------Slider---------------->       
 <header>
+
+  <?php
+//testando acerto de cadastro
+    if(isset($_GET['sucessoCadastro'])&& $_GET['sucessoCadastro']=='true'){?>
+            <div id="sucessoCadastro">
+              <script type="text/javascript">
+              alert("Seu Cadastro foi realizado com sucesso!!! Bem vindo a SolidariUni!!! Agora você já pode realizar seu login!!!");
+              </script>         
+            </div>
+    <?php } ?>
+
+    <?php
+    if (isset($_GET['erroCadastro'])&& $_GET['ErroCadastro']=='true'){?>
+            <div id="ErroCadastro">
+               <script type="text/javascript">
+             alert("Ocorreu um erro no seu Cadastro, tente novamente!!!");
+             </script>            
+            </div>
+<?php } ?> 
 <?php
+//testando erro de envio de email
     if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
             <div id="sucessoMail">
               <script type="text/javascript">
-              alert ("SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!");
+              alert("SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!");
               </script>         
             </div>
     <?php } ?>
