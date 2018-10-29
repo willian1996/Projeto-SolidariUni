@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
     <body>
-<!-------------Menu---------------->
+<!------------Menu---------------->
         <header>
             <nav id="menu">
                 <div class="container">
