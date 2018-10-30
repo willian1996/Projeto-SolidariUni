@@ -86,18 +86,18 @@ div.slider {
     height: 640px !important;
 }
 
-#conteudoTexto{
+.conteudoTexto{
     margin: 80px 60px;
 
 }
 
-#conteudoTexto h1{
+.conteudoTexto h1{
     text-align: center;
     font-size: 40px;
     color: #000000;
 
 }
-#conteudoTexto p{
+.conteudoTexto p{
     font-size: 20px;
     text-align: justify;
     color: #222222;
@@ -107,8 +107,12 @@ div.slider {
     text-align: center;
 }
 
-#sessaoCard{
+.sessao-campanhas{
     margin: 80px 60px;
+}
+
+.sessao-campanhas a{
+    color:#050c4a;
 }
 
 #modal-avatar{
@@ -153,9 +157,6 @@ header #menu .container li a:hover{
     background-color: #3C96EC;
 }
 
-#sessaoCard a{
-    color:#050c4a;
-}
 
 h1{
     color: #050c4a;

@@ -11,14 +11,14 @@ else{
 
 ?>
 
-        <section id="conteudoTexto">
-            <div id="paragrafo2">
+        <section class="conteudoTexto">
+            
             <h1>Todas as campanhas</h1>
                 
-            </div>
+            
         </section>
 
-       <section id="sessaoCard">
+       <section class="sessao-campanhas">
               <div class="row">
                     <div class="col s12 m4">
                         <div class="card">
