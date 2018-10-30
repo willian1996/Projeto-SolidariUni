@@ -81,7 +81,7 @@ else{
         </header>
         
 <!--------------Conteúdo Textos e frases---------------------->
-        <section id="conteudoTexto">
+        <section class="conteudoTexto">
             <div>
                 <h1>Sobre Nós</h1>
                 <p>A SolidariUni é uma associação fundada em meados de 2018, por um grupo de amigos. Buscamos fazer a união entre colaboradores e recebedores de doações. Nosso principal objetivo é unir institutos que precisam de itens específicos e encontrar pessoas ou empresas que possam cooperar de alguma maneira de maneira efetiva e sem fins lucrativos. Participe você também!</p>
@@ -95,7 +95,7 @@ else{
             </div>
         </section>
 <!--------------FIMPARALLAX--------------------------->
-        <section id="conteudoTexto">
+        <section class="conteudoTexto">
             <div id="paragrafo2">
             <h1>Campanhas com sucesso</h1>
                 <p>Muitas campanhas já obtiveram sucesso! Participe você também e ajude aqueles que precisam. Doar faz bem.</p>
@@ -103,7 +103,7 @@ else{
         </section>
     
 <!-------------cards (Campanhas que deram certo)---------------->
-        <section id="sessaoCard">
+        <section class="sessao-campanhas">
               <div class="row">
                     <div class="col s12 m4">
                         <div class="card">
