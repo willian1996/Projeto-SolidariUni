@@ -7,18 +7,33 @@ if(isset($_SESSION['idusuario'])){
 else{
     require_once 'menu.php';
 }
+?>
 
-?> 
+<?php
+			require 'server/conexao.php';
+			try{
+				$stmt = $conn->prepare("SELECT u.foto_user FROM usuarios WHERE $_SESSION = ['idusuario']"); 
+				$stmt->execute();
+				$resultado = $stmt->fetchAll(); 
+			}catch(PDOException $e){
+				echo $e->getMessage();
+			}
+			foreach($resultado as $valor){
+			?>
 <section id="perfil">
     <div class="perfiluser">
         <div class="fotouser">
-            <img src="img/willian.jpg">
+            <img src="img/<?php echo $valor['foto_perfil']; ?>">
                 <h3>Willian Sales</h3>
         </div>
+        <?php
+			}
+        ?>
     </div>
 </section>
 
 <?php 
+
 require_once 'footer.php';
 
 ?>
