@@ -352,6 +352,10 @@ ul li a{
     
     
 }
-.cadastro-campanhas{
-    
+.cadastro-campanhas h1{
+    text-align: center;
 }
+.cadastro-campanhas #descricao{
+    min-height: 150px;
+}
+

@@ -11,51 +11,71 @@ else{
 
 ?>
 
-        
+
 
        <section class="cadastro-campanhas">
+           <h1>Adicionar campanha</h1>
            <div class="row">
             <div class="col s12 m12 l12">
               <div class="card-panel">
+                  
+                  
                 
                 <div class="row">
-                  <form class="col s12" method="post" action="server/cadastro-backend.php">
+                  
                     <div class="row">
                       <div class="input-field col s6">
-                        <input id="first_name" name="primeiro_nome" type="text" required>
-                        <label for="first_name">Título</label>
+                        <input id="titulo" type="text" required>
+                        <label for="titulo">Título</label>
                       </div>
                     
                       <div class="input-field col s6">
-                        <input id="last_name" name="sobrenome" type="text" required>
-                        <label for="last_name">Subtítulo</label>
+                        <input id="subtitulo" type="text" required>
+                        <label for="subtitulo">Subtítulo</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="email5" name="email" type="text" required>
-                        <label for="email">Descrição da campanha</label>
+                        Descrição da campanha
+                        <textarea id="descricao"></textarea><br/>
+                        
                       </div>
                     </div>
                     <div class="row">
-                      <div class="input-field col s12">
-                        <input id="telefone" name="telefone" type="tel" required>
-                        <label for="telefone">Telefone</label>
+            
+                      <div class="input-field col s6">
+                        Encerra em:
+                        <input id="data_final_campanha" type="date" required>
+                        
                       </div>
                     </div>
+                    <div class="row">
+            
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>Adicionar imagem da campanha</span>
+                            <input type="file" multiple>
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Procurar">
+                          </div>
+                        </div>
+                    </div>
+                      
+                    
                    
                     
                     
                     
                       <div class="row">
                         <div class="input-field col s12">
-                          <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Cadastrar
-                            <i class="mdi-content-send right"></i>
+                          <button class="btn cyan waves-effect waves-light right" type="submit">Cadastrar
+                            
                           </button>
                         </div>
                       </div>
                     
-                  </form>
+                  
                 </div>
               </div>
             </div>
