@@ -46,9 +46,9 @@
                       <ul class="side-nav" id="mobile-demo">
                         <li><a href="campanhas.php">Campanhas</a></li>
                         <hr width='80%'>
-                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="sobrenos.php">Sobre nós</a></li>
                         <hr width='80%'>
-                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="duvidas.php">Dúvidas</a></li>
                         <hr width='80%'>
                         <li><a href="server/logout.php">Sair</a></li>
                         <hr width='80%'>
