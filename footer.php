@@ -5,7 +5,7 @@
                   			<!--Frase footer -->
                    <a href="index.php"><img	src="img/frase.png"></a>
                     <ul>
-                      <li><i class="icon-facebook-squared"></i><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                      <li><i class="icon-facebook-squared"></i><a class="grey-text text-lighten-3" href="https://www.facebook.com/SolidariUnibrasil">Facebook</a></li>
                       <li><i class="icon-instagram"></i><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
                       <li><i class="icon-mail"></i><a class="grey-text text-lighten-3" href="#!">Email</a></li>
                       <li><a class="grey-text text-lighten-3" href="termos.php">Termos de uso</a></li>
