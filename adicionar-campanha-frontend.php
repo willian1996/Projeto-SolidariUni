@@ -11,7 +11,7 @@ else{
 
 ?>
 <script>
-		function cadastraCampanha(){
+		function cadastrarCampanha(){
 			var formData = new FormData();
 			var titulo = $('#titulo').val();
             var subtitulo = $('#subtitulo').val();
@@ -23,10 +23,10 @@ else{
 			formData.append("subtitulo", subtitulo);
             formData.append("descricao", descricao);
             formData.append("data_final_campanha", data_final_campanha);
-            formData.append("foto_campanha", foto_campanha);
+            formData.append("foto", foto_campanha);
 			
 			$.ajax({
-                  url: "server/adicionar-campanha-frontend.php",
+                  url: "server/adicionar-campanha-backend.php",
 				  method: "POST",
                   dataType: "json",
                   data: formData,
@@ -92,14 +92,10 @@ else{
                         <br>
                     </div>
                       
-                    
-                   
-                    
-                    
-                    
+        
                       <div class="row">
                         <div class="input-field col s12">
-                          <button onclick="cadastraCampanha()" class="btn cyan waves-effect waves-light right" type="submit">Cadastrar
+                          <button onclick="cadastrarCampanha()" class="btn cyan waves-effect waves-light right" type="submit">Cadastrar
                             
                           </button>
                         </div>
