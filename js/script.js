@@ -23,6 +23,8 @@
             $('.dropdown-button').dropdown('open');
             //fechar dropdown menu usuario 
             $('.dropdown-button').dropdown('close');
+            // Initialize collapse button
+            $(".button-collapse").sideNav();
         
         });
 
