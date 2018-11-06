@@ -35,7 +35,7 @@
         $('#password6').keyup(function() {
             $('#result').html(checkStrength($('#password6').val()))
             })
-function checkStrength(password) {
+        function checkStrength(password) {
             var strength = 0
             if (password.length < 6) {
             $('#result').removeClass()
