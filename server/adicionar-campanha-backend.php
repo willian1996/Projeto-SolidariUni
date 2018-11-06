@@ -49,7 +49,7 @@ if($_FILES["foto"]["size"] < 1048576){
         
         //-----------------------------------
 		$retorno['deucerto'] = true;
-		$retorno['msg'] = 'Arquivo enviado com sucesso!';
+		$retorno['msg'] = 'Campanha cadastrada com sucesso!';
 		echo json_encode($retorno);
         
 	}else{

@@ -61,6 +61,39 @@
                 }
             });
         }
+        function cadastrarCampanha(){
+                    var formData = new FormData();
+                    var titulo = $('#titulo').val();
+                    var subtitulo = $('#subtitulo').val();
+                    var descricao = $('#descricao').val();
+                    var data_final_campanha = $('#data_final_campanha').val();
+                    var foto_campanha = $('#foto_campanha').prop('files')[0];
+
+                    formData.append("titulo", titulo);
+                    formData.append("subtitulo", subtitulo);
+                    formData.append("descricao", descricao);
+                    formData.append("data_final_campanha", data_final_campanha);
+                    formData.append("foto", foto_campanha);
+                    
+                    $('#titulo, #subtitulo, #descricao, #data_final_campanha, #foto_campanha').val('');
+
+                    $.ajax({
+                          url: "server/adicionar-campanha-backend.php",
+                          method: "POST",
+                          dataType: "json",
+                          data: formData,
+                          cache: false,
+                          contentType: false,
+                          processData: false,
+                          success: function(retorno){
+                              if(retorno.deucerto){
+                                    alert(retorno.msg);     
+                              }else{
+                                    alert(retorno.msg);
+                              }
+                          }
+                      });
+        }
 
         
 
