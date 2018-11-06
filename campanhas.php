@@ -20,174 +20,36 @@ else{
 
        <section class="sessao-campanhas">
               <div class="row">
+                  <!-- Lista de campanhas cadastradas no banco de dados-->
+                    <?php
+                    require 'server/conexao.php';
+                    try{
+                        $stmt = $conn->prepare("SELECT * FROM campanhas"); 
+                        $stmt->execute();
+                        $resultado = $stmt->fetchAll(); 
+                    } catch(PDOException $e){
+                        echo $e->getMessage();
+                    }
+
+                    foreach($resultado as $valor){
+                    ?> 
                     <div class="col s12 m4">
                         <div class="card">
                             <div class="card-image">
-                              <img src="img/roupa.jpg">
-                              <span class="card-title">Campanha do Agasalho</span>
+                              <img src="upload-fotos-campanhas/<?php echo $valor['foto_campanha']; ?>">
+                              <span class="card-title"><?php echo $valor['titulo']; ?></span>
                             </div>
                             <div class="card-content">
-                              <p>Doação de casacos/roupas de frio para pessoas necessitadas. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/alimento.jpg">
-                              <span class="card-title">Campanha do Alimento</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadação de alimentos perecíveis para instituições de caridade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/cao.jpg">
-                              <span class="card-title">Campanha de Ração</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadar pacotes de rações para alimentar diversos animais da comunidade. </p>
+                              <p><?php echo $valor['subtitulo']; ?></p>
                             </div>
                             <div class="card-action">
                               <a href="#">Ver Campanha</a>
                             </div>
                        </div>
                     </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/roupa.jpg">
-                              <span class="card-title">Campanha do Agasalho</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Doação de casacos/roupas de frio para pessoas necessitadas. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/alimento.jpg">
-                              <span class="card-title">Campanha do Alimento</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadação de alimentos perecíveis para instituições de caridade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/cao.jpg">
-                              <span class="card-title">Campanha de Ração</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadar pacotes de rações para alimentar diversos animais da comunidade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/roupa.jpg">
-                              <span class="card-title">Campanha do Agasalho</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Doação de casacos/roupas de frio para pessoas necessitadas. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/alimento.jpg">
-                              <span class="card-title">Campanha do Alimento</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadação de alimentos perecíveis para instituições de caridade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/cao.jpg">
-                              <span class="card-title">Campanha de Ração</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadar pacotes de rações para alimentar diversos animais da comunidade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/roupa.jpg">
-                              <span class="card-title">Campanha do Agasalho</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Doação de casacos/roupas de frio para pessoas necessitadas. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                      </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/alimento.jpg">
-                              <span class="card-title">Campanha do Alimento</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadação de alimentos perecíveis para instituições de caridade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                              <img src="img/cao.jpg">
-                              <span class="card-title">Campanha de Ração</span>
-                            </div>
-                            <div class="card-content">
-                              <p>Arrecadar pacotes de rações para alimentar diversos animais da comunidade. </p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Ver Campanha</a>
-                            </div>
-                       </div>
-                    </div>
+                    <?php
+                    }
+                    ?>	   
              </div>
                 
         </section>
