@@ -26,6 +26,51 @@
             // Initialize collapse button
             $(".button-collapse").sideNav();
         
+        //PLUGIN DO LUAN (JQUERYMASK)//
+        
+            $("#telefone").mask("(12)00000-0000");
+            $("#CPF").mask("000.000.000-00");
+            $("#CNPJ").mask("00.000.000/0000-00");
+        
+        $('#password6').keyup(function() {
+            $('#result').html(checkStrength($('#password6').val()))
+            })
+function checkStrength(password) {
+            var strength = 0
+            if (password.length < 6) {
+            $('#result').removeClass()
+            $('#result').addClass('curta')
+            return 'Senha muito curta!'
+            }
+                if (password.length > 7) strength += 1
+
+                if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1
+
+
+                if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1
+
+
+                if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+
+                if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+            
+            if (strength < 2) {
+                $('#result').removeClass()
+                $('#result').addClass('fraca')
+                return 'Senha fraca!'
+            } else if (strength == 2) {
+                $('#result').removeClass()
+                $('#result').addClass('boa')
+                return 'Senha boa!'
+            } else {
+                $('#result').removeClass()
+                $('#result').addClass('forte')
+                return 'Senha forte!'
+            }
+            }
+        
         });
 
         function optionCheck(){
@@ -94,6 +139,9 @@
                           }
                       });
         }
+
+        
+
 
         
 

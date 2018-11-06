@@ -15,13 +15,40 @@ else{
 
 
            <!--Form Advance-->
+
+<style>
+#register .curta{
+font-weight:bold;
+color:#FF0000;
+font-size:larger;
+margin-left: 10px;
+}
+#register .fraca{
+font-weight:bold;
+color:orange;
+font-size:larger;
+margin-left: 10px;
+}
+#register .boa{
+font-weight:bold;
+color:#2D98F3;
+font-size:larger;
+margin-left: 10px;
+}
+#register .forte{
+font-weight:bold;
+color: limegreen;
+font-size:larger;
+margin-left: 10px;
+}
+</style>
         
           <div class="row">
             <div class="col s12 m12 l12">
               <div class="card-panel">
                 <h4 class="header2">Cadastre-se</h4>
                 <div class="row">
-                  <form class="col s12" method="post" action="server/cadastro-backend.php">
+                  <form id="register" class="col s12" method="post" action="server/cadastro-backend.php">
                     <div class="row">
                       <div class="input-field col s6">
                         <input id="first_name" name="primeiro_nome" type="text" required>
@@ -50,6 +77,7 @@ else{
                         <input id="password6" name="senha" type="password" required>
                         <label for="password">Senha</label>
                       </div>
+                        <span id="result"></span>
                     </div>
                     <div class="row">
                       <div class="input-field col s6">
