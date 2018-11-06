@@ -21,7 +21,7 @@ else{
        <section class="sessao-campanhas">
               <div class="row">
                   <!-- Lista de campanhas cadastradas no banco de dados-->
-                    <?php
+                <?php
                     require 'server/conexao.php';
                     try{
                         $stmt = $conn->prepare("SELECT * FROM campanhas"); 

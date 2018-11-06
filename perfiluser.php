@@ -11,22 +11,39 @@ else{
 
 
 <section id="perfil">
+    <?php
+    $id = $_SESSION['idusuario'];
+    require 'server/conexao.php';
+    try{
+        $stmt = $conn->prepare("SELECT * FROM usuarios where $id = idusuario"); 
+        $stmt->execute();
+        $resultado = $stmt->fetchAll(); 
+    } catch(PDOException $e){
+        echo $e->getMessage();
+    }
+
+    foreach($resultado as $valor){
+    ?> 
+    
     <div class="perfiluser">
-        <h3>Willian Sales</h3>
+        <h3><?php echo $valor['primeiro_nome']; ?></h3>
             <div class="dados1">
-                <h5>email:</h5><p>willianviado@gmail.com</p>
-                <h5>CPF:</h5><p>1029310293</p>
-                <h5>Nascimento:</h5><p>03/04/1950</p>
+                <h5>email:</h5><p><?php echo $valor['email']; ?></p>
+                <h5>CPF:</h5><p><?php echo $valor['CPF']; ?></p>
+                <h5>Nascimento:</h5><p><?php echo $valor['data_nascimento']; ?></p>
             </div>
             <div class="dados2">
-                <h5>Tipo de pessoa:</h5><p>física</p>
-                <h5>Telefone:</h5><p>997236686</p> 
-                <h5>Razão social:</h5><p>Bolsonaro presidente</p>
+                <h5>Tipo de pessoa:</h5><p><?php echo $valor['tipo_pessoa']; ?></p>
+                <h5>Telefone:</h5><p><?php echo $valor['telefone']; ?></p> 
+                <h5>Razão social:</h5><p><?php echo $valor['razao_social']; ?></p>
             </div>
         <div class="fotouser">
             <img src="img/willian.jpg">
             </div>
     </div>
+    <?php
+    }
+    ?>	
 </section>
 
 <?php 
