@@ -117,6 +117,7 @@ div.slider {
 
 .sessao-campanhas{
     margin: 80px 60px;
+    min-height: 300px;
 }
 
 .sessao-campanhas a{

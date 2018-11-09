@@ -43,7 +43,7 @@ else{
                               <p><?php echo $valor['subtitulo']; ?></p>
                             </div>
                             <div class="card-action">
-                              <a href="#">Ver Campanha</a>
+                              <a href="pag-campanha.php?id=<?php echo $valor['idcampanha']; ?>">Ver Campanha</a>
                             </div>
                        </div>
                     </div>

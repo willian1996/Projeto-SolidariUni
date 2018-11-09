@@ -9,6 +9,8 @@ $descricao = isset($_POST['descricao'])?$_POST['descricao']:'';
 $data_inicio_campanha = date("Y-m-d");
 $data_final_campanha = isset($_POST['data_final_campanha'])?$_POST['data_final_campanha']:'';
 $titular = $_SESSION['nome'];
+$telefone_titular = $_SESSION['telefone'];
+$email_titular = $_SESSION['email'];
 
 
 $caminho = '../upload-fotos-campanhas/';
@@ -25,8 +27,8 @@ if($_FILES["foto"]["size"] < 1048576){
         require_once 'conexao.php';
 
         try{
-            $stmt = $conn->prepare("INSERT campanhas (titulo, subtitulo, descricao, data_inicio_campanha, data_final_campanha, titular, foto_campanha) 
-            VALUES (:titulo, :subtitulo, :descricao, :data_inicio_campanha, :data_final_campanha, :titular, :foto_campanha)"
+            $stmt = $conn->prepare("INSERT campanhas (titulo, subtitulo, descricao, data_inicio_campanha, data_final_campanha, titular, foto_campanha, telefone_titular, email_titular) 
+            VALUES (:titulo, :subtitulo, :descricao, :data_inicio_campanha, :data_final_campanha, :titular, :foto_campanha, :telefone_titular, :email_titular)"
             );
 
             $stmt->bindParam(':titulo', $titulo);
@@ -36,6 +38,8 @@ if($_FILES["foto"]["size"] < 1048576){
             $stmt->bindParam(':data_final_campanha', $data_final_campanha);
             $stmt->bindParam(':titular', $titular);
             $stmt->bindParam(':foto_campanha', $nomearquivo);
+            $stmt->bindParam(':telefone_titular', $telefone_titular);
+            $stmt->bindParam(':email_titular', $email_titular);
            
 
             $stmt->execute();

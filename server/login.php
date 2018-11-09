@@ -19,6 +19,7 @@ try{
         $_SESSION['nome'] = $result['primeiro_nome'];
 		$_SESSION['email'] = $result['email'];
 		$_SESSION['senha'] = $result['senha'];
+        $_SESSION['telefone'] = $result['telefone'];
 		
 		$retorno['deucerto'] = true;
 		$retorno['mensagem'] = "Parabéns! Logou!";

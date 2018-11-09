@@ -103,18 +103,40 @@ else{
     
 </style>
 <section id="perfil-campanha">
+    <?php
+    $id = isset($_GET['id']) && is_numeric($_GET['id']) ? $_GET['id'] : 0;
+    
+		
+		if ($id == 0) {
+			die('campanha inválida!');
+		}
+    require 'server/conexao.php';
+    try{
+        $stmt = $conn->prepare("SELECT * FROM campanhas where $id = idcampanha"); 
+        $stmt->execute();
+        $resultado = $stmt->fetchAll(); 
+    } catch(PDOException $e){
+        echo $e->getMessage();
+    }
+
+    foreach($resultado as $valor){
+    ?> 
     <div class="perfilcamp">
-        <h3>TITULO</h3>
+        <h3><?php echo $valor['titulo']; ?></h3>
             <div class="dados-campanha">
-                <h5>Sub-titulo</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel erat pellentesque, mollis ex vitae, finibus leo. Suspendisse potenti. Proin eget erat pellentesque, ornare purus non, consectetur augue. Nullam non laoreet nibh, ut lacinia leo. Nulla accumsan vel leo sed venenatis. Morbi ut tortor lacus. Donec ipsum quam, lobortis nec egestas at, dapibus a nisi. Ut ut enim ut enim auctor malesuada pellentesque sed nisl. Suspendisse lacinia dui risus, a faucibus justo dignissim et. Sed eget velit interdum, laoreet lorem in, eleifend dui. </p>
+                <h5><?php echo $valor['subtitulo']; ?></h5><p><?php echo $valor['descricao']; ?></p>
                 <h2>Contatos:</h2>
-                <p>(12)99723-6686</p>
-                <p>email@gmail.com</p>
+                <p>Contactar: <?php echo $valor['titular']; ?></p>
+                <p><?php echo $valor['telefone_titular']; ?></p>
+                <p><?php echo $valor['email_titular']; ?></p>
             </div>
         <div class="fotocamp">
-            <img src="img/willian.jpg">
+            <img src="upload-fotos-campanhas/<?php echo $valor['foto_campanha']; ?>">
             </div>
     </div>
+    <?php
+    }
+    ?>	
 </section>
 
 <?php 
