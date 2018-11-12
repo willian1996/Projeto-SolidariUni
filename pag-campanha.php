@@ -59,7 +59,7 @@ else{
     #perfil-campanha .perfilcamp{
         background-color: #f2f2f2;
         width: 80%;
-        height: 1050px;
+        max-height: 1050px;
         margin: auto;
         margin-top: 150px;
         margin-bottom: 150px;
@@ -158,7 +158,7 @@ else{
           js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2&appId=574231669688686&autoLogAppEvents=1';
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="fb-comments" data-href="http://solidariuni.org" data-width="700" data-numposts="10"></div>
+        <div class="fb-comments" data-href="http://solidariuni.org" data-width="70%" data-numposts="10"></div>
     
     
     
