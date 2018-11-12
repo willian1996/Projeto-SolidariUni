@@ -155,7 +155,7 @@ else{
           js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2&appId=574231669688686&autoLogAppEvents=1';
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="fb-comments" data-href="http://solidariuni.org" data-width="70%" data-numposts="10"></div>
+        <div class="fb-comments" data-href="http://solidariuni.org" data-width="80%" data-numposts="30"></div>
     
     
     
