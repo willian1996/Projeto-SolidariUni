@@ -17,15 +17,17 @@ else{
 #perfil-campanha{
     width: 80%;
     margin: auto;
+    min-height: 500px;
 }
 
 #perfil-campanha .perfilcamp{
     background-color: #f2f2f2;
     width: 80%;
-    height: 500px;
+    min-height: 500px;
     margin: auto;
     margin-top: 150px;
     margin-bottom: 150px;
+    padding: 20px 0;
 }
 
 #perfil-campanha .perfilcamp .fotocamp{

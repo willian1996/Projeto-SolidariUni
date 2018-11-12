@@ -46,6 +46,7 @@ else{
         <div class="fotouser">
             <img src="img/willian.jpg">
             </div>
+        
     </div>
     <?php
     }
