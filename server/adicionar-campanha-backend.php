@@ -66,4 +66,10 @@ if($_FILES["foto"]["size"] < 1048576){
 	$retorno['msg'] = 'Arquivo muito grande!';
 	echo json_encode($retorno);
 }
+
+header('location:../index.php?ErrorCampanha=false');
+    
+
+}catch(exception $e){
+    header('location:../index.php?ErrorCampanha=true');
 ?>

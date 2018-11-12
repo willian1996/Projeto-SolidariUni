@@ -33,10 +33,10 @@ try{
     $stmt->bindParam(':tipo_pessoa', $tipo_pessoa);
     
     $stmt->execute();
-    header('Location: ../index.php?sucessoCadastro=true');
+    header('Location: ../index.php?ErrorCadastro=false');
     
 }catch(PDOException $e){
-    header('location:../index.php?erroCadastro=true');
+    header('location:../index.php?ErrorCadastro=true');
     
 }
 
