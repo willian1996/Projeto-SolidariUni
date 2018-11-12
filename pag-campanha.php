@@ -26,7 +26,7 @@ else{
     min-height: 500px;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     padding: 20px 0;
 }
 
@@ -82,25 +82,35 @@ else{
     }
 }
     
-    #perfil-campanha .perfilcamp h3{
-        margin-left: 27%;
-        padding-top: 40px;
-    }
+#perfil-campanha .perfilcamp h3{
+    margin-left: 27%;
+    padding-top: 40px;
+}
+
+#perfil-campanha .perfilcamp h2{
+    margin-left: 27%;
+}
+
+#perfil-campanha .perfilcamp h5{
+    margin-left: 27%;
+    font-size: 28px;
+}
+
+#perfil-campanha .perfilcamp p{
+    margin-left: 27%;
+    padding-right: 50px;
+    text-align: justify;
+}
+.camp-comentarios{
+    background-color: #f2f2f2;
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    margin-bottom: 150px;
+    padding: 20px 40px ;
+}
     
-    #perfil-campanha .perfilcamp h2{
-        margin-left: 27%;
-    }
-    
-    #perfil-campanha .perfilcamp h5{
-        margin-left: 27%;
-        font-size: 28px;
-    }
-    
-    #perfil-campanha .perfilcamp p{
-        margin-left: 27%;
-        padding-right: 50px;
-        text-align: justify;
-    }
+
     
     
 </style>
@@ -138,8 +148,25 @@ else{
     </div>
     <?php
     }
-    ?>	
+    ?>
+    <div class="camp-comentarios">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2&appId=574231669688686&autoLogAppEvents=1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-comments" data-href="http://solidariuni.org" data-width="700" data-numposts="10"></div>
+    
+    
+    
+    
+    </div>
 </section>
+
+
 
 <?php 
 
