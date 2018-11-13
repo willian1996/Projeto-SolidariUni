@@ -16,6 +16,7 @@ else{
 ?>
 
 
+
 <section id="perfil">
     <?php
     $id = $_SESSION['idusuario'];
@@ -29,12 +30,16 @@ else{
     }
 
     foreach($resultado as $valor){
+        $fotoPerfil = $valor['foto_perfil'];
+        if($fotoPerfil == null){
+            $fotoPerfil = "avatar.png";
+        }
     ?> 
     
     <div class="perfiluser">
-        <h3><?php echo $valor['primeiro_nome']; ?></h3>
+        <h3><?php echo $valor['primeiro_nome'];?>&#160<?php echo $valor['sobrenome']; ?></h3>
             <div class="dados1">
-                <h5>email:</h5><p><?php echo $valor['email']; ?></p>
+                <h5>Email:</h5><p><?php echo $valor['email']; ?></p>
                 <h5>CPF:</h5><p><?php echo $valor['CPF']; ?></p>
                 <h5>Nascimento:</h5><p><?php echo $valor['data_nascimento']; ?></p>
             </div>
@@ -42,15 +47,30 @@ else{
                 <h5>Tipo de pessoa:</h5><p><?php echo $valor['tipo_pessoa']; ?></p>
                 <h5>Telefone:</h5><p><?php echo $valor['telefone']; ?></p> 
                 <h5>Razão social:</h5><p><?php echo $valor['razao_social']; ?></p>
+                
             </div>
         <div class="fotouser">
-            <img src="img/willian.jpg">
-            </div>
+            <img src="upload-fotos-perfiluser/<?php echo $fotoPerfil ;?>">
+        </div>
         
+    </div>
+    
+    
+    <div class="upload-perfiluser">
+        <p>Atualizar foto de perfil</p>
+         <input type="file" id="foto_perfiluser" accept="image/*">
+         <button onclick="uploadFotoPerfiluser()" type="submit">Enviar</button>
+        
+        
+        
+        
+        
+        
+    
     </div>
     <?php
     }
-    ?>	
+    ?>
 </section>
 
 <?php 

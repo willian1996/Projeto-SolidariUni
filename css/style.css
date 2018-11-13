@@ -316,7 +316,7 @@ ul li a{
     height: 400px;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+/*    margin-bottom: 10px;*/
 }
 
 #perfil .perfiluser .fotouser{
@@ -365,20 +365,20 @@ ul li a{
     color:#FF0000;
     font-size:larger;
     margin-left: 10px;
-    }
-    #register .fraca{
+}
+#register .fraca{
     font-weight:bold;
     color:orange;
     font-size:larger;
     margin-left: 10px;
-    }
-    #register .boa{
+}
+#register .boa{
     font-weight:bold;
     color:#2D98F3;
     font-size:larger;
     margin-left: 10px;
-    }
-    #register .forte{
+}
+#register .forte{
     font-weight:bold;
     color: limegreen;
     font-size:larger;
@@ -396,7 +396,7 @@ ul li a{
     height: 400px;;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 }
 
 #perfil .perfiluser .fotouser{
@@ -427,59 +427,57 @@ ul li a{
         height: 700px;
         margin: auto;
         margin-top: 150px;
-        margin-bottom: 150px;
-}
+        margin-bottom: 20px;
+    }
     #perfil .perfiluser .dados2{
         margin-left: 25%;
     }
-    
-   
-    
     #perfil .perfiluser h3{
         text-align: center;
         margin-top: 120%;
         margin-right: 25%;
     }
 }
+
     
     
     
-    #perfil .perfiluser .dados{
-        width: 80%;
-        margin: auto;
+#perfil .perfiluser .dados{
+    width: 80%;
+    margin: auto;
 }
 
-    #perfil .perfiluser h3{
-        margin-left: 26%;
-        padding-top: 5%;
-    }
+#perfil .perfiluser h3{
+    margin-left: 26%;
+    padding-top: 5%;
+}
 
-    
-    #perfil .perfiluser .dados1{
-        float: left;
-        margin-left: 26%;
-    }
-    
-    #perfil .perfiluser .dados2{
-        float: right;
-        margin-right: 20%;
-    }
-    
-    #perfil .perfiluser .dados1 h5{
-        color: #4a4a4a;
-    }
-    
-    #perfil .perfiluser .dados2 h5{
-        color: #4a4a4a;
-    }
-    
-    #perfil .perfiluser .dados1 p{
-        color: #888888;
-    }
-    
-    #perfil .perfiluser .dados2 p{
-        color: #888888;
-    }
+
+#perfil .perfiluser .dados1{
+    float: left;
+    margin-left: 26%;
+}
+
+#perfil .perfiluser .dados2{
+    float: right;
+    margin-right: 20%;
+}
+
+#perfil .perfiluser .dados1 h5{
+    color: #4a4a4a;
+}
+
+#perfil .perfiluser .dados2 h5{
+    color: #4a4a4a;
+}
+
+#perfil .perfiluser .dados1 p{
+    color: #888888;
+}
+
+#perfil .perfiluser .dados2 p{
+    color: #888888;
+}
 #register .curta{
     font-weight:bold;
     color:#FF0000;
@@ -503,6 +501,16 @@ ul li a{
     color: limegreen;
     font-size:larger;
     margin-left: 10px;
+}
+#perfil .upload-perfiluser{
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    
+    
 }
 
 

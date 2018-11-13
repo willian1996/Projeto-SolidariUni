@@ -139,6 +139,33 @@ function cadastrarCampanha(){
           }
     });
 }
+function uploadFotoPerfiluser(){
+    var formData = new FormData();
+    var foto_perfiluser = $('#foto_perfiluser').prop('files')[0];
+
+    
+    formData.append("foto", foto_perfiluser);
+
+    $('#foto_perfiluser').val('');
+
+    $.ajax({
+          url: "server/upload-foto-perfiluser.php",
+          method: "POST",
+          dataType: "json",
+          data: formData,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function(retorno){
+              if(retorno.deucerto){
+                    alert(retorno.msg);
+                    location.reload();
+              }else{
+                    alert(retorno.msg);
+              }
+          }
+    });
+}
         
 
         

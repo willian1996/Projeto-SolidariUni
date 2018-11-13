@@ -68,7 +68,6 @@ else{
                       <div class="row">
                         <div class="input-field col s12">
                           <button onclick="cadastrarCampanha()" class="btn cyan waves-effect waves-light right" type="submit">Cadastrar
-                            
                           </button>
                         </div>
                       </div>
