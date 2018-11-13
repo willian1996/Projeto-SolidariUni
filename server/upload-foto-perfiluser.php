@@ -30,6 +30,8 @@ if($_FILES["foto"]["size"] < 1048576){
 
             $stmt->execute();
             
+            $_SESSION['foto_perfil'] = $nomearquivo;
+            
             $retorno['deucerto'] = true;
             $retorno['msg'] = 'Foto Atualizada com sucesso!';
             echo json_encode($retorno);

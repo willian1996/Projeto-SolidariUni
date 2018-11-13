@@ -20,7 +20,7 @@ try{
 		$_SESSION['email'] = $result['email'];
 		$_SESSION['senha'] = $result['senha'];
         $_SESSION['telefone'] = $result['telefone'];
-//        $_SESSION['foto_perfil'] = $result['foto_perfil'];
+        $_SESSION['foto_perfil'] = $result['foto_perfil'];
         
 		
 		$retorno['deucerto'] = true;
