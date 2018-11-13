@@ -22,7 +22,17 @@
                       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                         
                         <!--Avatar-->
-                        <a href="#" data-activates='dropdown1' class="dropdown-button"><img src="img/avatar-365-456317.png" id="modal-avatar"></a>
+                        <?php
+                        if($_SESSION['foto_perfil'] == null){
+                            $foto_user_avatar = "avatar.png";
+                        }
+                        else{
+                            $foto_user_avatar = $_SESSION['foto_perfil'];
+                        }
+                        
+                        
+                        ?>
+                        <a href="#" data-activates='dropdown1' class="dropdown-button"><img src="upload-fotos-perfiluser/<?php echo $foto_user_avatar; ?>" id="modal-avatar"></a>
                         <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="adicionar-campanha-frontend.php">Nova<br />Campanha</a></li>
                             <li class="divider"></li>

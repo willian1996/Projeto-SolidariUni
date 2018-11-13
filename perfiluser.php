@@ -30,7 +30,7 @@ else{
     }
 
     foreach($resultado as $valor){
-        $fotoPerfil = $valor['foto_perfil'];
+        $fotoPerfil = $_SESSION['foto_perfil'];
         if($fotoPerfil == null){
             $fotoPerfil = "avatar.png";
         }
