@@ -35,6 +35,7 @@
                         <a href="#" data-activates='dropdown1' class="dropdown-button"><img src="upload-fotos-perfiluser/<?php echo $foto_user_avatar; ?>" id="modal-avatar"></a>
                         <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="adicionar-campanha-frontend.php">Nova<br />Campanha</a></li>
+                            <li><a href="minhas-campanhas.php">Minha<br/>Campanha</a></li>
                             <li class="divider"></li>
                             <li><a href="perfiluser.php">Meu perfil</a></li>
                             <li><a href="server/logout.php">Sair</a></li>
