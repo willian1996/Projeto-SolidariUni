@@ -21,8 +21,6 @@
                         <a href="index.php" class="brand-logo"><img src="img/teste-logo.svg"></a>
                       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                         
-                       
-
     
                       <ul class="right hide-on-med-and-down">
                         <li><a href="index.php">Início</a></li>

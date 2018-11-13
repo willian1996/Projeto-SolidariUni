@@ -56,7 +56,6 @@ else{
     #perfil-campanha .perfilcamp{
         background-color: #f2f2f2;
         width: 80%;
-        max-height: 1050px;
         margin: auto;
         margin-top: 150px;
         margin-bottom: 150px;
