@@ -59,7 +59,10 @@
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-whatsapp:before { content: '\f232'; } /* '' */
-.icon-facebook-squared:before { content: '\f308'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; }
+.icon-twitter-squared:before { content: '\f304'; }
+.icon-twitter:before { content: '\f099'; } /* '' */
+/* '' *//* '' */
 
 #menu{
     background: -webkit-gradient(linear, left top, right top, from(#8abbea), to(#3C96EC)) no-repeat; background: -moz-linear-gradient(left, #8abbea, #3C96EC); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, Start orStr='#8abbea', EndColorStr='#3C96EC')
