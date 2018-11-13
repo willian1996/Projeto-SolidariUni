@@ -63,31 +63,62 @@ else{
     
     #perfil-campanha .perfilcamp h3{
         text-align: center;
-        margin-top: 120%;
+        margin-top: 50%;
         margin-right: 25%;
         
     }
     
     #perfil-campanha p{
-        text-align: center;
+        text-align: justify;
         margin-left: 30px;
     }
     
-    #perfil-campanha h5{
-        text-align: justify;
+    #perfil-campanha .perfilcamp h5{
+    font-size: 28px;
+        text-align: center;
+}
+     #perfil-campanha .perfilcamp .emailcont{
+        padding-right: 50px;
+    }
+    
+    #perfil-campanha .perfilcamp p{
+    margin-left: 100px 100px;
+    padding-right: 10%;
+    text-align: justify;
+    }
+        
+    #perfil-campanha .perfilcamp h3{
+        text-align: center;
+        margin: 20px 20px;
+        margin-right: 100px;
+        margin-top: 50%;
+}
+
+    #perfil-campanha .perfilcamp h2{
+    margin-left: 27%;
+}
+
+    #perfil-campanha .perfilcamp h5{
+    text-align: center;
+    font-size: 28px;
+}
+
+    #perfil-campanha .perfilcamp p{
+    margin-left: 27%;
+    padding-right: 50px;
+    text-align: justify;
     }
 }
     
-#perfil-campanha .perfilcamp h3{
-    margin-left: 27%;
-    padding-top: 40px;
-}
-
-#perfil-campanha .perfilcamp h2{
+    #perfil-campanha .perfilcamp h3{
     margin-left: 27%;
 }
 
-#perfil-campanha .perfilcamp h5{
+    #perfil-campanha .perfilcamp h2{
+    margin-left: 27%;
+}
+
+    #perfil-campanha .perfilcamp h5{
     margin-left: 27%;
     font-size: 28px;
 }
@@ -105,10 +136,7 @@ else{
     margin-bottom: 150px;
     padding: 20px 40px ;
 }
-    
 
-    
-    
 </style>
 <section id="perfil-campanha">
     <?php
@@ -136,7 +164,7 @@ else{
                 <h2>Contatos:</h2>
                 <p>Contactar: <?php echo $valor['titular']; ?></p>
                 <p><?php echo $valor['telefone_titular']; ?></p>
-                <p><?php echo $valor['email_titular']; ?></p>
+                <p id="emailcont"><?php echo $valor['email_titular']; ?></p>
             </div>
         <div class="fotocamp">
             <img src="upload-fotos-campanhas/<?php echo $valor['foto_campanha']; ?>">
