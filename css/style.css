@@ -322,21 +322,7 @@ ul li a{
 /*    margin-bottom: 10px;*/
 }
 
-#perfil .perfiluser .fotouser{
-    width: 100px;
-    height: 100px;
-    background-color: dodgerblue;
-    border-radius: 100%;
-    position: absolute;
-    top: 150px;
-    margin-left: 100px;
-}
 
-#perfil .perfiluser .fotouser img{
-    width: 50%;
-    background-image:url(../img/willian.jpg);
-    border-radius: 100%;
-}
 
 #perfil .perfiluser h3{
     font-size: 38px;
@@ -406,16 +392,18 @@ ul li a{
     width: 200px;
     height: 200px;
     background-color: dodgerblue;
-    border-radius: 50%;
+    border-radius: 90%;
     position: absolute;
     top: 150px;
     margin-left: 15px;
+    
 }
 
 #perfil .perfiluser .fotouser img{
-    width: 100%;
-    background-image:url(../img/willian.jpg);
-    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #perfil .perfiluser h3{
@@ -540,3 +528,4 @@ font-size:larger;
 margin-left: 10px;
 }
 /*página campanha*/
+
