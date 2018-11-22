@@ -25,10 +25,11 @@ $(document).ready(function(){
     $('.dropdown-button').dropdown('close');
     // Initialize collapse button
     $(".button-collapse").sideNav();
+    
 
     //PLUGIN DO LUAN (JQUERYMASK)//
 
-    $("#telefone").mask("(12)00000-0000");
+    $("#telefone").mask("(00) 00000-0000");
     $("#CPF").mask("000.000.000-00");
     $("#CNPJ").mask("00.000.000/0000-00");
 

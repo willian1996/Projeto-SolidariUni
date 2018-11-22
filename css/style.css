@@ -323,17 +323,17 @@ ul li a{
 }
 
 #perfil .perfiluser .fotouser{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: dodgerblue;
-    border-radius: 50%;
+    border-radius: 100%;
     position: absolute;
     top: 150px;
-    margin-left: 15px;
+    margin-left: 100px;
 }
 
 #perfil .perfiluser .fotouser img{
-    width: 100%;
+    width: 50%;
     background-image:url(../img/willian.jpg);
     border-radius: 100%;
 }
@@ -515,7 +515,6 @@ ul li a{
 }
 
 
-
 #register .curta{
 font-weight:bold;
 color:#FF0000;
@@ -523,7 +522,7 @@ font-size:larger;
 margin-left: 10px;
 }
 #register .fraca{
-font-weight:bold;
+font-weight:bold;a
 color:orange;
 font-size:larger;
 margin-left: 10px;
