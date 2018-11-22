@@ -26,12 +26,6 @@ else{
 						<p>Alessandra Teixeira da Conceição (05/01/1984). Nascida em Jacareí – S.P., sempre viveu na cidade de Caraguatatuba. Atleta de competição faixa marrom de Judô Categoria Master/Sênior, Ranqueada 2° Nacional e 1° Paulista, faixa preta 1° Dan de Hapkido e Instrutora de iniciação infantil. Entrou para o curso de TEC.WEB. no IFSP Caraguatatuba para se testar e adquirir novos conhecimentos e habilidades na área de tecnologia. Vê no Projeto SolidariUni uma boa forma de ajudar as pessoas.</p>
                     </div>
                     
-                    <div class="sobrecristina">
-                    <img src="img/cristina.jpg" alt="Cristina">
-						<h4>Cristina Moreira</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim lectus eget lacinia fermentum. Maecenas finibus maximus massa, dignissim mollis orci vehicula vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ornare interdum blandit. Ut non nulla augue.</p>
-                    </div>
-                    
                     <div class="sobreliandra">
                     <img src="img/liandra.jpg" alt="Liandra">
 						<h4>Liandra Ellen</h4>
