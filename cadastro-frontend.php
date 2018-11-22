@@ -17,30 +17,7 @@ else{
            <!--Form Advance-->
 
 <style>
-#register .curta{
-font-weight:bold;
-color:#FF0000;
-font-size:larger;
-margin-left: 10px;
-}
-#register .fraca{
-font-weight:bold;
-color:orange;
-font-size:larger;
-margin-left: 10px;
-}
-#register .boa{
-font-weight:bold;
-color:#2D98F3;
-font-size:larger;
-margin-left: 10px;
-}
-#register .forte{
-font-weight:bold;
-color: limegreen;
-font-size:larger;
-margin-left: 10px;
-}
+
 </style>
         
           <div class="row">
