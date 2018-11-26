@@ -73,6 +73,23 @@ $(document).ready(function(){
             return 'Senha forte!'
         }
     }
+    //plugin topo
+    
+
+    $('a#subirTopo').click(function () {
+         $('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+       });
+
+    $(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });    
 
 });
 
@@ -169,6 +186,7 @@ function uploadFotoPerfiluser(){
           }
     });
 }
+
         
 
         
