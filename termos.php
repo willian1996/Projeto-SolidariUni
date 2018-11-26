@@ -11,14 +11,10 @@ else{
 
 ?>
                    <!--------------Conteúdo Textos e frases---------------------->
-<style>
-
-</style>
-        <section id="conteudoTexto">
+        <section id="termos">
             <div>
 
                 <br/>
-
                <h1>Bem-vindo ao SolidariUni</h1>
 
 <p>Ao usar nossos Serviços, você está concordando com estes termos. Leia-os com atenção.</p>

@@ -97,23 +97,57 @@ div.slider {
     height: 640px !important;
 }
 
-#conteudoTexto{
+.conteudoTexto{
     margin: 80px 60px;
 
 }
 
-#conteudoTexto h1{
+.conteudoTexto h1{
     text-align: center;
     font-size: 40px;
     color: #000000;
 
 }
-#conteudoTexto p{
+.conteudoTexto p{
     font-size: 20px;
     text-align: justify;
     color: #222222;
     
 }
+
+#termos{
+    margin: 80px 60px;
+
+}
+
+#termos h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+
+}
+#termos p{
+    font-size: 20px;
+    text-align: justify;
+    color: #222222;
+    
+} 
+
+@media screen and (max-width: 600px){
+        #conteudosobrenos .comentario .membros h4{
+            margin-left: 8%;
+            text-align: center;
+            margin-top: 70px;
+        }
+        #conteudosobrenos .comentario .membros p{
+            margin-left: 0%;
+            margin-top: 70px;
+        }
+        #conteudosobrenos .comentario .membros img{
+            margin-bottom: 30px;
+            margin-left: 20%;
+        }
+    }
 .footer-copyright{
     text-align: center;
 }
