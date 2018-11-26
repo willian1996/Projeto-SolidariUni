@@ -11,6 +11,23 @@ else{
 
 ?>
 <!--------------Conteúdo Textos e frases---------------------->
+<style>
+    @media screen and (max-width: 600px){
+        #conteudosobrenos .comentario .membros h4{
+            margin-left: 8%;
+            text-align: center;
+            margin-top: 70px;
+        }
+        #conteudosobrenos .comentario .membros p{
+            margin-left: 0%;
+            margin-top: 70px;
+        }
+        #conteudosobrenos .comentario .membros img{
+            margin-bottom: 30px;
+            margin-left: 20%;
+        }
+    } 
+</style>
         <section id="conteudosobrenos">
             <div class="sobre">
                 <h1>Sobre Nós</h1>
