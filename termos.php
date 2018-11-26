@@ -11,6 +11,13 @@ else{
 
 ?>
                    <!--------------Conteúdo Textos e frases---------------------->
+<style>
+    @media screen and (max-width: 600px){
+        #termos h1{
+            font-size: 30px;
+        }
+    }
+</style>
         <section id="termos">
             <div>
 
