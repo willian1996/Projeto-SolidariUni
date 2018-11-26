@@ -28,7 +28,9 @@
     </script>    
 </head>
     <body id="containerBody">
+        
         <div id="loader"></div>
+
         <script type="text/javascript">
 		// Este evendo é acionado após o carregamento da página
 		jQuery(window).load(function() {
@@ -36,6 +38,7 @@
 			jQuery("#loader").delay(1000).fadeOut("slow");
 		});
 	</script>
+
         
 <!------------Menu---------------->
         <header>

@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-    <body id="containerBody">
+    <body>
+<!-- NÃO FUNCIONOU NO MENU DESLOGADO, SOMENTE NO MENU LOGADO
         <div id="loader"></div>
         <script type="text/javascript">
 		// Este evendo é acionado após o carregamento da página
@@ -21,6 +22,7 @@
 			jQuery("#loader").delay(1000).fadeOut("slow");
 		});
 	</script>
+-->
 <!-------------Menu---------------->
         <header>
             <nav id="menu">
