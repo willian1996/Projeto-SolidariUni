@@ -11,6 +11,9 @@ else{
 
 ?>
                    <!--------------Conteúdo Textos e frases---------------------->
+<style>
+
+</style>
         <section id="conteudoTexto">
             <div>
 

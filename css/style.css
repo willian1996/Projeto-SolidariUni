@@ -97,18 +97,18 @@ div.slider {
     height: 640px !important;
 }
 
-.conteudoTexto{
+#conteudoTexto{
     margin: 80px 60px;
 
 }
 
-.conteudoTexto h1{
+#conteudoTexto h1{
     text-align: center;
     font-size: 40px;
     color: #000000;
 
 }
-.conteudoTexto p{
+#conteudoTexto p{
     font-size: 20px;
     text-align: justify;
     color: #222222;
