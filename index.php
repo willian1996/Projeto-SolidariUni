@@ -13,7 +13,13 @@ else{
 if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='false'){?>
         <div id="sucessoCampanha">
           <script type="text/javascript">
-          alert("Sua campanha foi adicionada!!! Logo estárá disponivel para apreciação de nossos colaboradores. Boa Sorte!!!");
+            new Noty({
+            type: 'success',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Sua acmpanha foi adicionada!!! Logo estárá disponivel para apreciação de nossos colaboradores. Boa Sorte!!!!!!'
+            }).show(); 
+          
           </script>         
         </div>
 <?php } 
@@ -21,7 +27,13 @@ if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='false'){?>
 if (isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='true'){?>
         <div id="erroCampanha">
            <script type="text/javascript">
-         alert("Ocorreu um erro no seu envio, tente novamente!!!");
+              new Noty({
+            type: 'error',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Ocorreu um erro no seu envio, tente novamente!!!'
+            }).show(); 
+        
          </script>            
         </div>
 <?php } 
@@ -31,14 +43,28 @@ if (isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='true'){?>
 if(isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='false'){?>
         <div id="sucessoCadastro">
           <script type="text/javascript">
-          alert("Seu Cadastro foi realizado com sucesso!!! Bem vindo a SolidariUni!!! Agora você já pode realizar seu login!!!");
+
+            new Noty({
+            type: 'success',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Seu Cadastro foi realizado com sucesso!!! Bem vindo a SolidariUni!!! Agora você já pode realizar seu login!!!'
+            }).show(); 
+          
           </script>         
         </div>
 <?php } 
 if (isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='true'){?>
         <div id="erroCadastro">
            <script type="text/javascript">
-         alert("Ocorreu um erro no seu Cadastro, tente novamente!!!");
+
+            new Noty({
+            type: 'error',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Ocorreu um erro no seu Cadastro, tente novamente!!!'
+            }).show(); 
+
          </script>            
         </div>
 <?php } 
@@ -46,14 +72,27 @@ if (isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='true'){?>
 if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
         <div id="sucessoMail">
           <script type="text/javascript">
-          alert("SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!");
+
+            new Noty({
+            type: 'success',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!'
+            }).show(); 
+         
           </script>         
         </div>
 <?php }
 if (isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='true'){?>
         <div id="erroMail">
            <script type="text/javascript">
-         alert("Ocorreu um erro no seu envio, tente novamente!!!");
+            new Noty({
+            type: 'error',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Ocorreu um erro no seu envio, tente novamente!!!'
+            }).show();  
+         
          </script>            
         </div>
 <?php } 
