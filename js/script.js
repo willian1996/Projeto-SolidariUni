@@ -204,6 +204,25 @@ const titulo = document.querySelector('.maquinaDeEscrever');
 typeWriter(titulo);
 
 
+//Editar Camapanha
+
+function editarCampanha(id){
+    var idcampanha = id;
+    alert("Clicou em editar campanha "+idcampanha);
+    
+}
+
+function excluirCampanha(id){
+    var idcampanha = id;
+    alert("Clicou em excluir campanha "+idcampanha);
+}
+
+
+
+
+
+
+
 
 
 

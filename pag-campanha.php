@@ -31,6 +31,10 @@ else{
     foreach($resultado as $valor){
     ?> 
     <div class="perfilcamp">
+        <?php if(isset($_SESSION['nome']) && $_SESSION['nome'] == $valor['titular']){?>
+        <i class="icon-excluir" onclick="excluirCampanha(<?php echo $valor['idcampanha']; ?>)"></i>
+        <i class="icon-editar" onclick="editarCampanha(<?php echo $valor['idcampanha']; ?>)"></i>
+        <?php } ?>
         <h3><?php echo $valor['titulo']; ?></h3>
             <div class="dados-campanha">
                 <h5><?php echo $valor['subtitulo']; ?></h5><p><?php echo $valor['descricao']; ?></p>
