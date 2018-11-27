@@ -34,30 +34,16 @@ else{
         <h3><?php echo $valor['titulo']; ?></h3>
             <div class="dados-campanha">
                 <h5><?php echo $valor['subtitulo']; ?></h5><p><?php echo $valor['descricao']; ?></p>
-                <br>
                 
                 
                 
                 
-                <h5>Encerra em:</h5>
-                 
                 
-    <div class="wrapper">
-      <div class="cell">
-        <div id="holder">
-          <div class="digits"></div>
-        </div>
-      </div>
-    </div>
-                           
+                <h5>Encerra em:</h5><p><?php echo date('d/m/Y',strtotime($valor['data_final_campanha'])); ?></p>
+   
                 
                 
                 
-
-                
-                
-                
-                <br>
                 <h2>Contatos:</h2>
                 <p>Contactar: <?php echo $valor['titular']; ?></p>
                 <p><?php echo $valor['telefone_titular']; ?></p>

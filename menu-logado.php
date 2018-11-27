@@ -11,21 +11,12 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <!--plugin contagem regressiva-->
+    
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <link href="css/media.css" rel="stylesheet" type="text/css" />
-    <script>
-      $(function(){
-        $(".digits").countdown({
-          image: "img/digits.png",
-          format: "dd:hh:mm:ss",
-          endTime: new Date(2013, 12, 2)
-        });
-      });
-    </script>    
+    
+    
 </head>
     <body id="containerBody">
         

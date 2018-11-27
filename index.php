@@ -9,68 +9,63 @@ else{
 }
 
 
-?>
- <!-------------Slider---------------->       
-<header>
+//testando erro de envio de campanhas
+if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='false'){?>
+        <div id="sucessoCampanha">
+          <script type="text/javascript">
+          alert("Sua campanha foi adicionada!!! Logo estárá disponivel para apreciação de nossos colaboradores. Boa Sorte!!!");
+          </script>         
+        </div>
+<?php } 
 
-  <?php
-  //testando erro de envio de campanhas
-    if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='false'){?>
-            <div id="sucessoCampanha">
-              <script type="text/javascript">
-              alert("Sua campanha foi adicionada!!! Logo estárá disponivel para apreciação de nossos colaboradores. Boa Sorte!!!");
-              </script>         
-            </div>
-    <?php } ?>
-
-    <?php
-    if (isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='true'){?>
-            <div id="erroCampanha">
-               <script type="text/javascript">
-             alert("Ocorreu um erro no seu envio, tente novamente!!!");
-             </script>            
-            </div>
-    <?php } ?>             
-
-
-  <?php
+if (isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='true'){?>
+        <div id="erroCampanha">
+           <script type="text/javascript">
+         alert("Ocorreu um erro no seu envio, tente novamente!!!");
+         </script>            
+        </div>
+<?php } 
 
 
 //testando erro de cadastro
-    if(isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='false'){?>
-            <div id="sucessoCadastro">
-              <script type="text/javascript">
-              alert("Seu Cadastro foi realizado com sucesso!!! Bem vindo a SolidariUni!!! Agora você já pode realizar seu login!!!");
-              </script>         
-            </div>
-    <?php } ?>
-
-    <?php
-    if (isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='true'){?>
-            <div id="erroCadastro">
-               <script type="text/javascript">
-             alert("Ocorreu um erro no seu Cadastro, tente novamente!!!");
-             </script>            
-            </div>
-<?php } ?> 
-<?php
+if(isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='false'){?>
+        <div id="sucessoCadastro">
+          <script type="text/javascript">
+          alert("Seu Cadastro foi realizado com sucesso!!! Bem vindo a SolidariUni!!! Agora você já pode realizar seu login!!!");
+          </script>         
+        </div>
+<?php } 
+if (isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='true'){?>
+        <div id="erroCadastro">
+           <script type="text/javascript">
+         alert("Ocorreu um erro no seu Cadastro, tente novamente!!!");
+         </script>            
+        </div>
+<?php } 
 //testando erro de envio de email
-    if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
-            <div id="sucessoMail">
-              <script type="text/javascript">
-              alert("SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!");
-              </script>         
-            </div>
-    <?php } ?>
+if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
+        <div id="sucessoMail">
+          <script type="text/javascript">
+          alert("SolidariUni Agradece seu contato, retornaremos em breve sua solicitação!!!");
+          </script>         
+        </div>
+<?php }
+if (isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='true'){?>
+        <div id="erroMail">
+           <script type="text/javascript">
+         alert("Ocorreu um erro no seu envio, tente novamente!!!");
+         </script>            
+        </div>
+<?php } 
+?>
 
-    <?php
-    if (isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='true'){?>
-            <div id="erroMail">
-               <script type="text/javascript">
-             alert("Ocorreu um erro no seu envio, tente novamente!!!");
-             </script>            
-            </div>
-    <?php } ?>             
+<style>
+
+</style>
+
+<header>
+<!-------------Slider----------------> 
+               
 
             <div class="slider">
                 <ul class="slides" style="height: 600px">
@@ -106,7 +101,7 @@ else{
         <section class="conteudoTexto">
             <div>
                 <h1>A SolidariUni</h1>
-                <p>A SolidariUni é uma associação fundada em meados de 2018, por um grupo de amigos. Buscamos fazer a união entre colaboradores e recebedores de doações. Nosso principal objetivo é unir institutos que precisam de itens específicos e encontrar pessoas ou empresas que possam cooperar de alguma maneira de maneira efetiva e sem fins lucrativos. Participe você também!</p>
+                <p class="maquinaDeEscrever">A SolidariUni é uma associação fundada em meados de 2018, por um grupo de amigos. Buscamos fazer a união entre colaboradores e recebedores de doações. Nosso principal objetivo é unir institutos que precisam de itens específicos e encontrar pessoas ou empresas que possam cooperar de alguma maneira de maneira efetiva e sem fins lucrativos. Participe você também!</p>
         
             </div>
         </section>
@@ -172,6 +167,7 @@ else{
              </div>
                 
         </section>
+
             
 <!-------------------footer------------------->
 <?php 
