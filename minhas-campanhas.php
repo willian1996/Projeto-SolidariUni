@@ -20,7 +20,7 @@ else{
 
 </style>
 
-<section id="pagina_minhas_campanhas">
+<section class="sessao-campanhas">
               <div class="row">
                   <!-- Lista de campanhas cadastradas no banco de dados-->
                 <?php
