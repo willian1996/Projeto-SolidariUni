@@ -153,7 +153,7 @@ if (isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='true'){?>
 <!--------------FIMPARALLAX--------------------------->
         <section class="conteudoTexto">
             <div id="paragrafo2">
-            <h1>Campanhas com sucesso</h1>
+            <h1>Principais campanhas</h1>
                 <p>Muitas campanhas já obtiveram sucesso! Participe você também e ajude aqueles que precisam. Doar faz bem.</p>
             </div>
         </section>
