@@ -11,6 +11,7 @@
               <li><i class="icon-facebook-squared"></i><a class="grey-text text-lighten-3" href="https://www.facebook.com/SolidariUnibrasil">Facebook</a></li>
               <li><i class="icon-instagram"></i><a class="grey-text text-lighten-3" href="https://www.instagram.com/solidariuni/">Instagram</a></li>
               <li><i class="icon-mail"></i><a class="grey-text text-lighten-3" href="https://twitter.com/SolidariUni">Twitter</a></li>
+               <li><a class="grey-text text-lighten-3" href="sobrenos.php">Sobre nós</a></li>
               <li><a class="grey-text text-lighten-3" href="#openModal">Termos de uso</a></li>
               <li><a class="grey-text text-lighten-3" href="contato-frontend.php">Fale conosco</a></li>
             </ul>
