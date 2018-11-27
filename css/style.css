@@ -831,7 +831,7 @@ div#loader{
 	top: 0px;
 	left:0px;
 	background-color: #FFF;
-	background-image: url('../img/load.gif');
+	background-image: url('../img/loader.gif');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -917,7 +917,7 @@ opacity:1;
     content: '|';
     margin-left: 5px;
     opacity: 1;
-    animation pisca .7s infinite;
+    animation: pisca .7s infinite;
 
 }  
 @keyframes pisca{

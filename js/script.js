@@ -200,7 +200,7 @@ function typeWriter(elemento){
 }
 
 const titulo = document.querySelector('.maquinaDeEscrever');
-console.log(titulo);
+
 typeWriter(titulo);
 
 
