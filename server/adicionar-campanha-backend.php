@@ -44,12 +44,12 @@ if($_FILES["foto"]["size"] < 1048576){
 
             $stmt->execute();
             $retorno['deucerto'] = true;
-            $retorno['msg'] = 'Foto Atualizada com sucesso!';
+            $retorno['msg'] = 'Campanha cadastrada com sucesso!';
             echo json_encode($retorno);
             
             }catch(PDOException $e){
                 $retorno['deucerto'] = false;
-                $retorno['mensagem'] = "Opss! Erro no servidor!";
+                $retorno['mensagem'] = "Opss! Erro no servidor, tente novamente!";
                 $retorno['error'] = $e->getMessage();
                 echo json_encode($retorno);
                 
