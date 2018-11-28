@@ -207,14 +207,37 @@ typeWriter(titulo);
 //Editar Camapanha
 
 function editarCampanha(id){
-    var idcampanha = id;
-    alert("Clicou em editar campanha "+idcampanha);
+    if(!$('[data-id-campanha='+id+'] .tituloCampanhaH3').hasClass('editavel')){
+       $('[data-id-campanha='+id+'] .descricaoCampanhaP').after('<a class="salvar" href="javascript:;" onclick="salvar('+id+')">Salvar edição</a>');
+       }
+    $('[data-id-campanha='+id+'] .tituloCampanhaH3').attr('contenteditable','true');
+    $('[data-id-campanha='+id+'] .tituloCampanhaH3').addClass('editavel');
+    $('[data-id-campanha='+id+'] .tituloCampanhaH3').focus();
+    
+    $('[data-id-campanha='+id+'] .subtituloCampanhaH5').attr('contenteditable','true');
+    $('[data-id-campanha='+id+'] .subtituloCampanhaH5').addClass('editavel');
+    
+    $('[data-id-campanha='+id+'] .descricaoCampanhaP').attr('contenteditable','true');
+    $('[data-id-campanha='+id+'] .descricaoCampanhaP').addClass('editavel');
+    
     
 }
 
+function salvar(id){
+    var titulo = $('[data-id-campanha='+id+'] .tituloCampanhaH3').text();
+    var subtitulo = $('[data-id-campanha='+id+'] .subtituloCampanhaH5').text();
+    var descricao = $('[data-id-campanha='+id+'] .descricaoCampanhaP').text();
+    
+    alert("Titulo = "+titulo+ " | subtitulo = "+subtitulo+" | descricao = "+descricao);
+    
+}
+
+
+
+// Excluir campanha
 function excluirCampanha(id){
     var idcampanha = id;
-    alert("Clicou em excluir campanha "+idcampanha);
+    alert("Clicou em excluir campanha, id: "+idcampanha);
 }
 
 

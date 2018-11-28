@@ -11,7 +11,7 @@ else{
 }
 ?>
 <style>
-    #pagina_minhas_campanhas{
+    .sessao-campanhas{
         min-height: 500px;
     }
 

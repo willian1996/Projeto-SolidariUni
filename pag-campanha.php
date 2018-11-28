@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 if(isset($_SESSION['idusuario'])){
     require_once 'menu-logado.php';
 }
@@ -30,14 +29,15 @@ else{
 
     foreach($resultado as $valor){
     ?> 
-    <div class="perfilcamp">
+    <div class="perfilcamp" data-id-campanha="<?php echo $valor['idcampanha']; ?>">
         <?php if(isset($_SESSION['nome']) && $_SESSION['nome'] == $valor['titular']){?>
         <i class="icon-excluir" onclick="excluirCampanha(<?php echo $valor['idcampanha']; ?>)"></i>
         <i class="icon-editar" onclick="editarCampanha(<?php echo $valor['idcampanha']; ?>)"></i>
         <?php } ?>
-        <h3><?php echo $valor['titulo']; ?></h3>
+        <h3 class="tituloCampanhaH3"><?php echo $valor['titulo']; ?></h3>
             <div class="dados-campanha">
-                <h5><?php echo $valor['subtitulo']; ?></h5><p><?php echo $valor['descricao']; ?></p>
+                <h5 class="subtituloCampanhaH5"><?php echo $valor['subtitulo']; ?></h5>
+                <p class="descricaoCampanhaP"><?php echo $valor['descricao']; ?></p>
                 
                 
                 
