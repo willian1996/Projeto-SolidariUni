@@ -308,8 +308,8 @@ function excluirCampanha(id){
                       }
                   }
               });
-		}
 }
+
 
 
 
