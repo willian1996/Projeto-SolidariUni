@@ -228,7 +228,32 @@ function salvar(id){
     var subtitulo = $('[data-id-campanha='+id+'] .subtituloCampanhaH5').text();
     var descricao = $('[data-id-campanha='+id+'] .descricaoCampanhaP').text();
     
-    alert("Titulo = "+titulo+ " | subtitulo = "+subtitulo+" | descricao = "+descricao);
+    $.ajax({
+          url: "server/editar-campanha.php",
+          method: "POST",
+          dataType: "json", //tipo de retorno.
+          data: {'idcampanha':id, 'novotitulo':titulo, 'novosubtitulo':subtitulo, 'novadescricao':descricao},
+          success: function(retorno){
+              if(retorno.deucerto){
+                $('[data-id-campanha='+id+'] .tituloCampanhaH3').removeAttr('contenteditable');     
+                $('[data-id-campanha='+id+'] .tituloCampanhaH3').removeClass('editavel');
+                  
+                $('[data-id-campanha='+id+'] .subtituloCampanhaH5').removeAttr('contenteditable');     
+                $('[data-id-campanha='+id+'] .subtituloCampanhaH5').removeClass('editavel');
+            
+                  
+                $('[data-id-campanha='+id+'] .descricaoCampanhaP').removeAttr('contenteditable');     
+                $('[data-id-campanha='+id+'] .descricaoCampanhaP').removeClass('editavel');
+                  
+                $('[data-id-campanha='+id+'] .salvar').remove();
+                console.log(retorno.mensagem);
+              }else{
+                console.log(retorno.mensagem);
+                console.log(retorno.error);
+                alert("Opss.. erro no servidor, tente novamente!");
+              }
+          }
+    });
     
 }
 
