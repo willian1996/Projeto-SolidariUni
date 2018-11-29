@@ -60,8 +60,8 @@ else{
 <?php if(isset($_SESSION['nome']) && $_SESSION['nome'] == $valor['titular']){?>
     <div class="upload-foto-campanha">
         <p>Atualizar foto de da campanha</p>
-         <input type="file" id="foto_perfiluser" accept="image/*">
-         <button onclick="uploadFotoPerfiluser()" type="submit">Enviar</button>
+         <input type="file" id="foto_perfilcamp" accept="image/*">
+         <button onclick="uploadFotoCampanha(<?php echo $valor['idcampanha']; ?>)" type="submit">Enviar</button>
     
     </div>
 <?php } ?>

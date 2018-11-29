@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-$id = $_SESSION['idusuario'];
+$id = $_POST['idcampanha'];
 $origem = $_FILES["foto"]["tmp_name"];
 
 
 
-$caminho = '../upload-fotos-perfiluser/';
+$caminho = '../upload-fotos-campanhas/';
 
 $resultado = explode('.',$_FILES["foto"]["name"]);
 $ext = end($resultado);
@@ -20,17 +20,17 @@ if($_FILES["foto"]["size"] < 4194304){
         require_once 'conexao.php';
 
         try{
-            $stmt = $conn->prepare("UPDATE usuarios SET foto_perfil = :foto_perfil WHERE idusuario = :idusuario;");
+            $stmt = $conn->prepare("UPDATE campanhas SET foto_campanha = :foto_campanha WHERE idcampanha = :idcampanha;");
 
-            $stmt->bindParam(':idusuario', $id);
-            $stmt->bindParam(':foto_perfil', $nomearquivo);
+            $stmt->bindParam(':idcampanha', $id);
+            $stmt->bindParam(':foto_campanha', $nomearquivo);
             
            
            
 
             $stmt->execute();
             
-            $_SESSION['foto_perfil'] = $nomearquivo;
+            
             
             $retorno['deucerto'] = true;
             $retorno['msg'] = 'Foto Atualizada com sucesso!';

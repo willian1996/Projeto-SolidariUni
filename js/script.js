@@ -187,6 +187,37 @@ function uploadFotoPerfiluser(){
     });
 }
 
+function uploadFotoCampanha(idcamp){
+    var formData = new FormData();
+    var foto_perfilcamp = $('#foto_perfilcamp').prop('files')[0];
+
+    
+    formData.append("foto", foto_perfilcamp);
+    formData.append("idcampanha", idcamp);
+
+    $('#foto_perfilcamp').val('');
+
+    $.ajax({
+          url: "server/upload-foto-camp.php",
+          method: "POST",
+          dataType: "json",
+          data: formData,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function(retorno){
+              if(retorno.deucerto){
+                    alert(retorno.msg);
+                    location.reload();
+              }else{
+                    alert(retorno.msg);
+              }
+          }
+    });
+}
+
+
+
 //Efeito maquina de escrever
 function typeWriter(elemento){
     const textoArray = elemento.innerHTML.split('');
@@ -262,8 +293,22 @@ function salvar(id){
 
 // Excluir campanha
 function excluirCampanha(id){
-    var idcampanha = id;
-    alert("Clicou em excluir campanha, id: "+idcampanha);
+			$.ajax({
+                  url: "server/excluir-campanha.php",
+				  method: "POST",
+                  dataType: "json", //tipo de retorno.
+                  data: {"idcampanha":id},
+                  success: function(retorno){
+                      if(retorno.deucerto){
+                         console.log(retorno.mensagem);     
+                      }else{
+                        console.log(retorno.mensagem);
+                        console.log(retorno.error);
+                        alert("Opss.. erro no servidor, tente novamente!");
+                      }
+                  }
+              });
+		}
 }
 
 
