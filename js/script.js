@@ -247,6 +247,7 @@ function salvar(id){
                   
                 $('[data-id-campanha='+id+'] .salvar').remove();
                 console.log(retorno.mensagem);
+                alert("Campanha atualizada com sucesso");
               }else{
                 console.log(retorno.mensagem);
                 console.log(retorno.error);

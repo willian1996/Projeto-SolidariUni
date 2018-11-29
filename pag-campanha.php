@@ -57,6 +57,14 @@ else{
             <img src="upload-fotos-campanhas/<?php echo $valor['foto_campanha']; ?>">
             </div>
     </div>
+<?php if(isset($_SESSION['nome']) && $_SESSION['nome'] == $valor['titular']){?>
+    <div class="upload-foto-campanha">
+        <p>Atualizar foto de da campanha</p>
+         <input type="file" id="foto_perfiluser" accept="image/*">
+         <button onclick="uploadFotoPerfiluser()" type="submit">Enviar</button>
+    
+    </div>
+<?php } ?>
     <?php
     }
     ?>

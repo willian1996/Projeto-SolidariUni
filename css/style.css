@@ -511,6 +511,15 @@ ul li a{
     margin-bottom: 20px;
     padding: 5px 10px; 
 }
+#perfil-campanha .upload-foto-campanha{
+    background-color: #fcfcfc;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    
+}
 
 
 #register .curta{
