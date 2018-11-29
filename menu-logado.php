@@ -21,18 +21,6 @@
     
 </head>
     <body id="containerBody">
-        
-        <div id="loader"></div>
-
-        <script type="text/javascript">
-		// Este evendo é acionado após o carregamento da página
-		jQuery(window).load(function() {
-			//Após a leitura da pagina o evento fadeOut do loader é acionado, esta com delay para ser perceptivo em ambiente fora do servidor.
-			jQuery("#loader").delay(1000).fadeOut("slow");
-		});
-	</script>
-
-        
 <!------------Menu---------------->
         <header>
             <nav id="menu">
