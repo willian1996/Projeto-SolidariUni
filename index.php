@@ -42,7 +42,7 @@ if (isset($_GET['ErrorCadastro'])&& $_GET['ErrorCadastro']=='true'){?>
         </div>
 <?php } 
 //testando erro de envio de email
-if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
+if(isset($_GET['ErrorMail'])&& $_GET['ErrorMail']=='false'){?>
         <div id="sucessoMail">
           <script type="text/javascript">
 
@@ -56,7 +56,7 @@ if(isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='false'){?>
           </script>         
         </div>
 <?php }
-if (isset($_GET['ErrorInfo'])&& $_GET['ErrorInfo']=='true'){?>
+if (isset($_GET['ErrorMail'])&& $_GET['Errormail']=='true'){?>
         <div id="erroMail">
            <script type="text/javascript">
             new Noty({

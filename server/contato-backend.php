@@ -35,11 +35,11 @@ try{
 	$mail->Body = $corpo; //Mensagem
 	$mail->send();
 	
-	header('location:../index.php?ErrorInfo=false');
+	header('location:../index.php?ErrorMail=false');
 	
 
 }catch(exception $e){
-	header('location:../index.php?ErrorInfo=true');
+	header('location:../index.php?ErrorMail=true');
 	//echo'<Erro no envio>. Mailer Error: ', $mail->ErrorInfo;
 }
 
