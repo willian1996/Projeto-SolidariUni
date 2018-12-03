@@ -15,9 +15,6 @@ else{
 
 ?>
 
-
-
-
 <section class="cadastro-campanhas">
    <h1>Adicionar campanha</h1>
    <div class="row">

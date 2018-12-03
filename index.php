@@ -9,34 +9,7 @@ else{
 }
 
 
-//testando erro de envio de campanhas
-if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='false'){?>
-        <div id="sucessoCampanha">
-          <script type="text/javascript">
-            new Noty({
-            type: 'success',
-            layout: 'topCenter',
-            theme: 'sunset',
-            text: 'Sua acmpanha foi adicionada!!! Logo estárá disponivel para apreciação de nossos colaboradores. Boa Sorte!!!!!!'
-            }).show(); 
-          
-          </script>         
-        </div>
-<?php } 
 
-if (isset($_GET['ErrorCampanha'])&& $_GET['ErrorInfo']=='true'){?>
-        <div id="erroCampanha">
-           <script type="text/javascript">
-              new Noty({
-            type: 'error',
-            layout: 'topCenter',
-            theme: 'sunset',
-            text: 'Ocorreu um erro no seu envio, tente novamente!!!'
-            }).show(); 
-        
-         </script>            
-        </div>
-<?php } 
 
 
 //testando erro de cadastro

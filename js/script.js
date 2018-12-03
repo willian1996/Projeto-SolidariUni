@@ -152,9 +152,9 @@ function cadastrarCampanha(){
           processData: false,
           success: function(retorno){
               if(retorno.deucerto){
-                    alert(retorno.msg);     
+                   window.location.href="campanhas.php?ErrorCampanha=false";
               }else{
-                    alert(retorno.msg);
+                    window.location.href="campanhas.php?ErrorCampanha=true";
               }
           }
     });
@@ -178,7 +178,7 @@ function uploadFotoPerfiluser(){
           processData: false,
           success: function(retorno){
               if(retorno.deucerto){
-                    alert(retorno.msg);
+                alert(retorno.msg);
                     location.reload();
               }else{
                     alert(retorno.msg);
@@ -300,11 +300,9 @@ function excluirCampanha(id){
                   data: {"idcampanha":id},
                   success: function(retorno){
                       if(retorno.deucerto){
-                         console.log(retorno.mensagem);     
+                        window.location.href="campanhas.php?ErrorExcluir=false";    
                       }else{
-                        console.log(retorno.mensagem);
-                        console.log(retorno.error);
-                        alert("Opss.. erro no servidor, tente novamente!");
+                        window.location.href="campanhas.php?ErrorExcluir=false";
                       }
                   }
               });

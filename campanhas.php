@@ -7,7 +7,63 @@ if(isset($_SESSION['idusuario'])){
 else{
     require_once 'menu.php';
 }
+//testando erro de envio de campanhas
+if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorCampanha']=='false'){?>
+        <div id="sucessoCampanha">
+          <script type="text/javascript">
+            new Noty({
+            type: 'success',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Sua campanha foi adicionada e já está disponivel para apreciação de nossos colaboradores. Boa Sorte!!!!!!'
+            }).show(); 
+          
+          </script>         
+        </div>
+<?php } 
 
+if (isset($_GET['ErrorCampanha'])&& $_GET['ErrorCampanha']=='true'){?>
+        <div id="erroCampanha">
+           <script type="text/javascript">
+              new Noty({
+            type: 'error',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Ocorreu um erro no seu envio, tente novamente!!!'
+            }).show(); 
+        
+         </script>            
+        </div>
+<?php } 
+
+//testando erro de envio de campanhas
+if(isset($_GET['ErrorExcluir'])&& $_GET['ErrorExcluir']=='false'){?>
+        <div id="sucessoExcluir">
+          <script type="text/javascript">
+            new Noty({
+            type: 'success',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Sua campanha foi excluída!!!'
+            }).show(); 
+          
+          </script>         
+        </div>
+<?php } 
+
+if (isset($_GET['ErrorExcluir'])&& $_GET['ErrorExcluir']=='true'){?>
+        <div id="erroExcluir">
+           <script type="text/javascript">
+              new Noty({
+            type: 'error',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Ocorreu um erro na exclusão da campanha!!! tente Novamente!!!'
+            }).show(); 
+        
+         </script>            
+        </div>
+<?php } 
 
 ?>
 
