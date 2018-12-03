@@ -4,7 +4,7 @@ $id = $_POST['idcampanha'];
 require 'conexao.php';
 try{
 	$stmt = $conn->prepare(
-	"DELETE FROM campanhas WHERE id = :idcampanha"
+	"DELETE FROM campanhas WHERE idcampanha = :idcampanha"
 	);
     $stmt->bindParam(':idcampanha', $id);
 
