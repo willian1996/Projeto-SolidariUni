@@ -7,6 +7,23 @@ if(isset($_SESSION['idusuario'])){
 else{
     require_once 'menu.php';
 }
+
+//testando erro Editar Campanha
+if(isset($_GET['ErrorEditar'])&& $_GET['ErrorEditar']=='false'){?>
+        <div id="sucessoeditar">
+          <script type="text/javascript">
+
+            new Noty({
+            type: 'success',
+            layout: 'topCenter',
+            theme: 'sunset',
+            text: 'Campanha editada com sucesso!!!'
+            }).show(); 
+         
+          </script>         
+        </div>
+<?php }
+
 //testando erro de envio de campanhas
 if(isset($_GET['ErrorCampanha'])&& $_GET['ErrorCampanha']=='false'){?>
         <div id="sucessoCampanha">

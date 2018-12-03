@@ -278,11 +278,9 @@ function salvar(id){
                   
                 $('[data-id-campanha='+id+'] .salvar').remove();
                 console.log(retorno.mensagem);
-                alert("Campanha atualizada com sucesso");
+               window.location.href="campanhas.php?ErrorEditar=false"; 
               }else{
-                console.log(retorno.mensagem);
-                console.log(retorno.error);
-                alert("Opss.. erro no servidor, tente novamente!");
+                window.location.href="editar-campanha.php?ErrorEditar=true";
               }
           }
     });
@@ -302,7 +300,7 @@ function excluirCampanha(id){
                       if(retorno.deucerto){
                         window.location.href="campanhas.php?ErrorExcluir=false";    
                       }else{
-                        window.location.href="campanhas.php?ErrorExcluir=false";
+                        window.location.href="campanhas.php?ErrorExcluir=true"; 
                       }
                   }
               });
