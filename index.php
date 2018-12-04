@@ -138,7 +138,7 @@ if (isset($_GET['ErrorMail'])&& $_GET['Errormail']=='true'){?>
                 <?php
                     require 'server/conexao.php';
                     try{
-                        $stmt = $conn->prepare("SELECT * FROM campanhas"); 
+                        $stmt = $conn->prepare("SELECT * FROM campanhas ORDER BY contagem desc"); 
                         $stmt->execute();
                         $resultado = $stmt->fetchAll(); 
                     } catch(PDOException $e){
@@ -158,6 +158,9 @@ if (isset($_GET['ErrorMail'])&& $_GET['Errormail']=='true'){?>
                             </div>
                             <div class="card-action">
                               <a href="pag-campanha.php?id=<?php echo $valor['idcampanha']; ?>">Ver Campanha</a>
+                                <div class="contagem">
+                                    <p><b><?php echo "Visualizações: " . $valor['contagem'];?></b></p>
+                                </div>
                             </div>
                        </div>
                     </div>

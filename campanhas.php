@@ -117,6 +117,9 @@ if (isset($_GET['ErrorExcluir'])&& $_GET['ErrorExcluir']=='true'){?>
                             </div>
                             <div class="card-action">
                               <a href="pag-campanha.php?id=<?php echo $valor['idcampanha']; ?>">Ver Campanha</a>
+                                <div class="contagem">
+                               <p><b><?php echo "Visualizações: ". $valor['contagem'];?></b></p>
+                                    </div>
                             </div>
                        </div>
                     </div>
@@ -129,7 +132,7 @@ if (isset($_GET['ErrorExcluir'])&& $_GET['ErrorExcluir']=='true'){?>
             
 
 
-
+ 
 
 
 

@@ -12,13 +12,19 @@ else{
 
 <section id="perfil-campanha">
     <?php
-    $id = isset($_GET['id']) && is_numeric($_GET['id']) ? $_GET['id'] : 0;
-    
+    $id = isset($_GET['id']) && is_numeric($_GET['id']) ? $_GET['id'] : 0; 
+    //rodar sql para mostrar contagem 
+   
 		
 		if ($id == 0) {
 			die('campanha inválida!');
 		}
     require 'server/conexao.php';
+     $sqlcontagem = 'UPDATE campanhas SET contagem = contagem + 1 WHERE idcampanha = ' . $id;
+    $stmt = $conn->prepare($sqlcontagem); 
+    $stmt->execute();
+    
+    
     try{
         $stmt = $conn->prepare("SELECT * FROM campanhas where $id = idcampanha"); 
         $stmt->execute();

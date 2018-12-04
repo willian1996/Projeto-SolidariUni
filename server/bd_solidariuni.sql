@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Nov-2018 às 20:33
+-- Generation Time: 03-Dez-2018 às 21:48
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -38,17 +38,18 @@ CREATE TABLE `campanhas` (
   `titular` varchar(50) NOT NULL,
   `foto_campanha` varchar(50) DEFAULT NULL,
   `telefone_titular` varchar(15) DEFAULT NULL,
-  `email_titular` varchar(200) DEFAULT NULL
+  `email_titular` varchar(200) DEFAULT NULL,
+  `contagem` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `campanhas`
 --
 
-INSERT INTO `campanhas` (`idcampanha`, `titulo`, `subtitulo`, `descricao`, `data_inicio_campanha`, `data_final_campanha`, `titular`, `foto_campanha`, `telefone_titular`, `email_titular`) VALUES
-(12, 'ArrecadaÃ§Ã£o de feijÃ£o.', 'Estamos arrecadando feijÃ£o para doar aos necessitados.', 'OlÃ¡, fazemos parte da ONG sem fome, estamos arrecadando feijÃ£o para doar aos necessitados. VocÃª pode colaborar entrando em contato conosco e buscamos. Ou se quiser, trazer atÃ© nÃ³s, no endereÃ§o:\nRua: Figueira Noventa Silva NÂº78 Porto Novo, Caraguatatuba-SP', '2018-11-27', '2018-12-12', 'Luan', 'feijao.jpg', '(12)99999-9999', 'gamerluan23@gmail.com'),
-(14, 'Campanha de agasalho', 'Estamos arrecadando roupas para moradores de rua nessa Ã©poca de frio.', 'OlÃ¡, somos uma ONG que ajuda moradores de rua. Estamos arrecadando roupas para moradores de rua. Ligue para nÃ³s e ajude-nos!', '2018-11-27', '2018-12-12', 'Fernando', '5bfd98b62e793.jpg', '(12) 33242-3452', 'fernando@gmail.com'),
-(15, 'ArrecadaÃ§Ã£o de raÃ§Ã£o', 'Somos a ONG ProteÃ§Ã£o Animal e estamos arrecadando raÃ§Ã£o para cÃ£es.', 'OlÃ¡, somos a ONG ProteÃ§Ã£o Animal. Estamos com um projeto de arredaÃ§Ã£o de raÃ§Ã£o para cÃ£es e precisamos de sua colaboraÃ§Ã£o! Na nossa primeira fase arrecadamos 300 quilos! Nosso objetivo agora sÃ£o 500 quilos! Contamos com a sua ajuda!\nRua: Tal Santos de Sousa bairro Tinga, Caraguatatuba-SP', '2018-11-27', '1992-12-12', 'Fernando', '5bfd9af90c772.jpg', '(12) 33242-3452', 'fernando@gmail.com');
+INSERT INTO `campanhas` (`idcampanha`, `titulo`, `subtitulo`, `descricao`, `data_inicio_campanha`, `data_final_campanha`, `titular`, `foto_campanha`, `telefone_titular`, `email_titular`, `contagem`) VALUES
+(12, 'ArrecadaÃ§Ã£o de feijÃ£o.', 'Estamos arrecadando feijÃ£o para doar aos necessitados.', 'OlÃ¡, fazemos parte da ONG sem fome, estamos arrecadando feijÃ£o para doar aos necessitados. VocÃª pode colaborar entrando em contato conosco e buscamos. Ou se quiser, trazer atÃ© nÃ³s, no endereÃ§o:\nRua: Figueira Noventa Silva NÂº78 Porto Novo, Caraguatatuba-SP', '2018-11-27', '2018-12-12', 'Luan', 'feijao.jpg', '(12)99999-9999', 'gamerluan23@gmail.com', 4),
+(14, 'Campanha de agasalho', 'Estamos arrecadando roupas para moradores de rua nessa Ã©poca de frio.', 'OlÃ¡, somos uma ONG que ajuda moradores de rua. Estamos arrecadando roupas para moradores de rua. Ligue para nÃ³s e ajude-nos!', '2018-11-27', '2018-12-12', 'Fernando', '5bfd98b62e793.jpg', '(12) 33242-3452', 'fernando@gmail.com', 4),
+(15, 'ArrecadaÃ§Ã£o de raÃ§Ã£o', 'Somos a ONG ProteÃ§Ã£o Animal e estamos arrecadando raÃ§Ã£o para cÃ£es.', 'OlÃ¡, somos a ONG ProteÃ§Ã£o Animal. Estamos com um projeto de arredaÃ§Ã£o de raÃ§Ã£o para cÃ£es e precisamos de sua colaboraÃ§Ã£o! Na nossa primeira fase arrecadamos 300 quilos! Nosso objetivo agora sÃ£o 500 quilos! Contamos com a sua ajuda!\nRua: Tal Santos de Sousa bairro Tinga, Caraguatatuba-SP', '2018-11-27', '1992-12-12', 'Fernando', '5bfd9af90c772.jpg', '(12) 33242-3452', 'fernando@gmail.com', 5);
 
 -- --------------------------------------------------------
 
