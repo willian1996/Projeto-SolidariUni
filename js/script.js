@@ -110,7 +110,7 @@ function login(){
     var email = $('#login_email').val();
     var senha = $('#login_senha').val();
 
-    console.log("Email: "+email+" senha: "+senha);
+    
 
     $.ajax({
         url: "server/login.php",
